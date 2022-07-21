@@ -45,13 +45,17 @@
 
 .Formular__button
     cursor: pointer
-    font-size: 18px
-    font-weight: 500
+    font-size: 16px
+    font-weight: 400
     border-radius: 2px
-    padding: 4px 14px
+    padding: 8px 14px
     color: base.$almost-white
-    border: none
-    background-color: #246475
+    border: 1px solid base.$almost-white
+    background-color: base.$dark-color
+    &:hover
+        background-color: base.$main-color
+        border: 1px solid base.$main-color
+        
 
 .Formular__info
     font-size: 16px

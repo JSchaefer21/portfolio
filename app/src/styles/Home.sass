@@ -7,7 +7,14 @@
 
 
 .Home__header
+    position: fixed
     top: 0
+    z-index: 1
+    display: flex
+    height: 45px
+    width: 100%
+    background-color: base.$medium-color
+    border-bottom: 4px solid base.$main-color
 
 
 .Home__body
@@ -52,10 +59,18 @@
 .Home__contact
     margin-top: -1px
     background-color: base.$dark-color
-    height: 150px
+    height: 200px
     display: flex
     align-items: center
     justify-content: center
+    gap: 3rem
 
-
-
+.contact-logo
+    width: 40px
+    height: 40px
+    background-color: base.$light-color
+    padding: 10px
+    cursor: pointer
+    border-radius: 2px
+    &:hover
+        background-color: base.$main-color

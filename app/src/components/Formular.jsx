@@ -19,7 +19,7 @@ function Formular(){
             setMessage('Email is not valid')
             return
         } else if(e.target.message.value === '') {
-            setMessage('There is no message to send')
+            setMessage('Message is empty')
             return
         }
     
