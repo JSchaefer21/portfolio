@@ -31,11 +31,11 @@ function Home(){
                 <Formular/>
             </div>
             <div className="Home__contact mw">
-                <a href="https://www.linkedin.com/in/jordi-schaefer" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
-                    <img className='contact-logo' src='../../linkedin_logo.png' alt=''/>
-                </a>
                 <a href="https://github.com/JSchaefer21" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
                     <img className='contact-logo' src='../../github_logo.png' alt=''/>
+                </a>
+                <a href="https://www.linkedin.com/in/jordi-schaefer" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
+                    <img className='contact-logo' src='../../linkedin_logo.png' alt=''/>
                 </a>
             </div>
         </footer>
