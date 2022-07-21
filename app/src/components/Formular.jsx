@@ -5,6 +5,7 @@ import '../styles/Formular.sass'
 
 function Formular(){
 
+    const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     const [message, setMessage] = useState(null)
     const form = useRef()
 
@@ -14,7 +15,7 @@ function Formular(){
         if(e.target.user_name.value === '') {
             setMessage('Please write a name')
             return
-        } else if(e.target.user_email.value === '') {
+        } else if(!EMAIL_REGEX.test(e.target.user_email.value)) {
             setMessage('Email is not valid')
             return
         } else if(e.target.message.value === '') {
@@ -35,7 +36,7 @@ function Formular(){
         <h1 className='Formular__tittle'>CONTACT</h1>
 
         <input className='Formular__input' type='text' name='user_name' placeholder=' Name'/>
-        <input className='Formular__input' type='email' name='user_email' placeholder=' Email'/>
+        <input className='Formular__input' type='text' name='user_email' placeholder=' Email'/>
         <textarea className='Formular__text' name='message' placeholder=' Your message'/>
         <div className='Formular__footer'>
             <input className='Formular__button' type='submit' value='Send' />

@@ -1,7 +1,7 @@
 @use 'base'
 
 .Home
-    background-color: #cfcfcf
+    background-color: base.$almost-white
     display: flex
     flex-direction: column
 
@@ -13,6 +13,7 @@
 .Home__body
     padding: 0
     display: flex
+    flex-direction: column
     align-items: center
     justify-content: center
     height: 300px
@@ -31,26 +32,26 @@
     //clip-path: polygon( 0% 100%, 0 0, 50% 100%, 100% 0%, 100% 100%)
     //background-color: #252935
 .color-cv
-    background-color: #cfcfcf
+    background-color: base.$almost-white
 .color-formular
-    background-color: #454f6d
+    background-color: base.$light-color
 
 
 .Home__cv
-    background-color: #454f6d
+    background-color: base.$light-color
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
 .Home__formular
-    background-color: #252935
+    background-color: base.$medium-color
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
 .Home__contact
     margin-top: -1px
-    background-color: #1b242f
+    background-color: base.$dark-color
     height: 150px
     display: flex
     align-items: center
