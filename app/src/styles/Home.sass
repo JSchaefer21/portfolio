@@ -23,7 +23,31 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    height: 300px
+    margin-top: 45px
+
+.polygon
+    display: inline-block
+    position: relative
+    margin: 1rem
+    margin-top: 4rem
+    width: 258px
+    height: 258px
+    box-sizing: border-box
+    background-color: base.$main-color
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)
+.Home__foto-perfil
+    position: absolute
+    top: 4px
+    left: 4px
+    width: 250px
+    height: 250px
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)
+
+.Home__name
+    padding: 0
+    margin: 4px
+    font-size: 24px
+    font-weight: 600
 
 .Home__footer
     display: flex

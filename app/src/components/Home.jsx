@@ -1,5 +1,6 @@
 import Formular from './Formular.jsx'
 import CV from './CV.jsx'
+import Projects from './Projects.jsx'
 import '../styles/Home.sass'
 
 
@@ -12,11 +13,16 @@ function Home(){
         </header>
 
         <main className="Home__body">
+            <div className='polygon'>
+                <img className='Home__foto-perfil' src='../../foto_perfil.jpg' alt=''/>
+            </div>
             <p className="Home__name"> Hello, I'm Jordi Schaefer </p>
-            <p className="Home__name"> a junior web developer </p>
+            <p className="Home__name"> junior web developer </p>
 
             <p className="Home__description">I'm a web developer from Barcelona, Spain.
-            I have passion for finding solutions with every programming problems</p>
+            Passionate about finding solutions to development challenges</p>
+
+            <Projects/>
         </main>
     
 
