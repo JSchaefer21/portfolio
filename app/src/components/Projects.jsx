@@ -3,7 +3,7 @@ import '../styles/Projects.sass'
 
 function Projects(){
 
-    const [hover, setHover] = useState(true)
+    const [hover, setHover] = useState(false)
 
 
     return <div className='Projects mw' >
