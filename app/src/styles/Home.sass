@@ -29,7 +29,6 @@
     display: inline-block
     position: relative
     margin: 1rem
-    margin-top: 4rem
     width: 258px
     height: 258px
     box-sizing: border-box
@@ -43,63 +42,30 @@
     height: 250px
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)
 
+.Home__body-container
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: center
+    gap: 0rem
+    margin-top: 4rem
+
+.Home__text-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 1.5rem
+
+
 .Home__name
     padding: 0
-    margin: 4px
+    margin: 5px
     font-size: 24px
     font-weight: 600
 
-.Home__footer
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-
-.Home__footer-section
-    width: 100%
-    height: 45px
-    margin-top: -1px
-    clip-path: polygon( 100% 0%, 0 0, 50% 100%)
-    //clip-path: polygon( 0% 100%, 0 0, 50% 100%, 100% 0%, 100% 100%)
-    //background-color: #252935
-.color-cv
-    background-color: base.$almost-white
-.color-formular
-    background-color: base.$light-color
-
-
-.Home__cv
-    background-color: base.$light-color
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-.Home__formular
-    background-color: base.$medium-color
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-.Home__contact
-    margin-top: -1px
-    background-color: base.$dark-color
-    height: 180px
-    display: flex
-    align-items: center
-    justify-content: center
-    gap: 3rem
-
-.contact-logo
-    width: 38px
-    height: 38px
-    background-color: base.$light-color
-    padding: 12px
-    cursor: pointer
-    border-radius: 2px
-    box-shadow: 0px 0px 2px 1px base.$main-color
-    transition: 150ms
-    &:hover
-        background-color: base.$main-color
-        margin: 2px
-        padding: 10px
-
+.Home__description
+    margin: 0
+    margin-top: 1.5rem
+    font-size: 18px
+    font-weight: 700
+    color: base.$main-color

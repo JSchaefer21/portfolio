@@ -1,6 +1,5 @@
-import Formular from './Formular.jsx'
-import CV from './CV.jsx'
 import Projects from './Projects.jsx'
+import Footer from './Footer.jsx'
 import '../styles/Home.sass'
 
 
@@ -9,42 +8,26 @@ function Home(){
     return <div className="Home mw">
 
         <header className="Home__header">
-
         </header>
 
         <main className="Home__body">
-            <div className='polygon'>
-                <img className='Home__foto-perfil' src='../../foto_perfil.jpg' alt=''/>
-            </div>
-            <p className="Home__name"> Hello, I'm Jordi Schaefer </p>
-            <p className="Home__name"> junior web developer </p>
+            <div className='Home__body-container'>
 
-            <p className="Home__description">I'm a web developer from Barcelona, Spain.
-            Passionate about finding solutions to development challenges</p>
+                <div className='Home__text-container'>
+                    <p className="Home__name"> Hello, I'm Jordi Schaefer </p>
+                    <p className="Home__name"> junior web developer </p>
+
+                    <p className="Home__description">Passionate about finding solutions to development challenges</p>
+                </div>
+                <div className='polygon'>
+                    <img className='Home__foto-perfil' src='../../foto_perfil.jpg' alt=''/>
+                </div>
+            </div>
 
             <Projects/>
         </main>
     
-
-
-        <footer className="Home__footer mw">
-            <div className="Home__cv mw">
-                <div className='Home__footer-section color-cv'></div>
-                <CV/>
-            </div>
-            <div className="Home__formular mw">
-                <div className='Home__footer-section color-formular'></div>
-                <Formular/>
-            </div>
-            <div className="Home__contact mw">
-                <a href="https://github.com/JSchaefer21" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
-                    <img className='contact-logo' src='../../github_logo.png' alt=''/>
-                </a>
-                <a href="https://www.linkedin.com/in/jordi-schaefer" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
-                    <img className='contact-logo' src='../../linkedin_logo.png' alt=''/>
-                </a>
-            </div>
-        </footer>
+        <Footer/>
 
     </div>
 } 
