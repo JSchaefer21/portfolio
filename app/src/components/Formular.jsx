@@ -33,7 +33,7 @@ function Formular(){
     }
 
     return <form className='Formular' ref={form} onSubmit={sendEmail}>
-        <h1 className='Formular__tittle'>CONTACT</h1>
+        <h1 className='Formular__title'>CONTACT</h1>
 
         <input className='Formular__input' type='text' name='user_name' placeholder=' Name'/>
         <input className='Formular__input' type='text' name='user_email' placeholder=' Email'/>

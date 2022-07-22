@@ -20,12 +20,12 @@ function Footer(){
             <Formular/>
         </div>
 
-        <div className="Footer__contact mw">
+        <div className="Footer__icons mw">
             <a href="https://github.com/JSchaefer21" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
-                <img className='Footer__contact-logo' src='../../github_logo.png' alt=''/>
+                <img className='Footer__icons-logo' src='../../github_logo.png' alt=''/>
             </a>
             <a href="https://www.linkedin.com/in/jordi-schaefer" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
-                <img className='Footer__contact-logo' src='../../linkedin_logo.png' alt=''/>
+                <img className='Footer__icons-logo' src='../../linkedin_logo.png' alt=''/>
             </a>
         </div>
 
