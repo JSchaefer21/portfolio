@@ -19,20 +19,15 @@ function Projects(){
                     <p className='Project__description'>The application shows some data in real time like altitude, distance, time, weather and map including the track registered.</p>
                 </div> }
                 {hover && <div> 
-                    <p className='Project__description'><text className='bold'>Front-end</text> made with HTML, SASS, Javascript, ReactJS, Express.</p>
+                    <p className='Project__description'><text className='bold'>Front-end</text> made with HTML, SASS, Javascript, React, Express.</p>
                     <p className='Project__description'><text className='bold'>Back-end</text> made with Javascript, NodeJS, MongoDB.</p>
                     <p className='Project__description'>Tested with Mocha - Chai</p>
                     <p className='Project__description'>Deployed with Surge, Heroku and MongoDB-Atlas</p>
                 </div> }
                     <p className='Project__description'><text className='bold'>Checkout GitHub</text> repositorie for more information.</p>
-
-            </div>
-
-            <img className='Project__1' src='../../stravita_resume.jpg' alt=''/>
+            </div>       
         </a>
-
-
-        
+   
     </div>
 } 
 

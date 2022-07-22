@@ -18,15 +18,12 @@
     margin-bottom: 4rem
 
 .Project__container
-    position: absolute
-    z-index: 1
-    left: 250px
-    top: 90px
-    width: 300px
-    min-height: 200px
+    left: 50%
+    width: 90%
+    transform: translate(6%, 20%)
     background-color: #1b242fdf
     border-radius: 15px
-    padding-top: 3px
+    padding: 3px 0 3px 0
 
 .Project__description
     padding: 0px 20px 0 20px
@@ -41,10 +38,35 @@
     color: #f6f6f6
 
 .Project_1
-    position: relative
-.Project__1
-    position: relative
-    max-width: 800px
+    width: 90%
+    height: 505px
     border-radius: 15px
     border: 3px solid base.$light-color
+    background-image: url('../../public/stravita_resume.jpg')
+    background-size: cover  
+    background-position: center
+
+
+@media only screen and (min-width: 445px)
+    .Project__container
+        width: 65%
+        transform: translate(27%, 27%)
+@media only screen and (min-width: 650px)
+    .Project__container
+        width: 48%
+        transform: translate(54%, 25%)
+
+@media only screen and (min-width: 900px)
+    .Project_1
+        position: relative
+        display: flex
+        width: 800px
+        height: 505px
+    .Project__container
+        position: absolute
+        left: 250px
+        top: 90px
+        width: 300px
+        transform: translate(0, 0)
+
 

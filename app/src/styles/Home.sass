@@ -9,18 +9,14 @@
     padding: 0
     position: relative
     display: flex
-    //flex-direction: column
-    flex-direction: row
+    flex-direction: column
     align-items: center
     justify-content: center
-    gap: 2rem
-    //padding: 12rem 0 12rem 0
     height: 99vh
     border-top: 5px solid base.$main-color
     border-bottom: 5px solid base.$main-color
     background-color: #22252c
     overflow: hidden
-
 
 .slide-lines 
     position:absolute
@@ -48,19 +44,19 @@
     transform: translateX(-100%)
 
 .line1
-    top:70vh
+    top:80vh
     animation: left-line 8s ease-in-out infinite
     transform: translate(100%)
 .line2
-    top:71vh
+    top:81vh
     animation: right-line 10s ease-in-out infinite
     transform: translateX(-100%)
 .line3
-    top:74vh
+    top:84vh
     animation: left-line 9s ease-in-out infinite
     transform: translate(100%)
 .line4
-    top:80vh
+    top:90vh
     animation: right-line 11s ease-in-out infinite
     transform: translateX(-100%)
 
@@ -89,9 +85,10 @@
 
 .Home__text-container
     display: flex
+    z-index: 2
     flex-direction: column
     align-items: center
-    margin-top: 1.5rem
+    margin-top: 2vh
 
 .Home__name
     padding: 0
@@ -99,10 +96,30 @@
     font-size: 24px
     font-weight: 500
     color: base.$almost-white
+    text-align: center
 
 .Home__description
-    margin: 0
-    margin-top: 1.5rem
+    margin: 4vh 30px 15vh 30px
     font-size: 18px
     font-weight: 600
     color: base.$main-color
+    text-align: center
+
+
+
+@media only screen and (min-width: 1000px)
+    .Home__header
+        flex-direction: row
+        gap: 2rem
+    .Home__text-container
+        margin-top: 7vh
+    .Home__description
+        margin-bottom: 0
+    .line1
+        top:70vh
+    .line2
+        top:71vh
+    .line3
+        top:74vh
+    .line4
+        top:80vh
