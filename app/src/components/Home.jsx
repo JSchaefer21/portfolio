@@ -2,7 +2,6 @@ import Projects from './Projects.jsx'
 import Footer from './Footer.jsx'
 import '../styles/Home.sass'
 
-
 function Home(){
 
     return <div className="Home mw">
