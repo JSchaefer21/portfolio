@@ -8,7 +8,7 @@ function Footer(){
         <div className="Footer__cv mw">
             <div className='Footer__section color-cv'></div>
             <div className='Footer__cv-container' >
-                <a className='Footer__cv-tittle' href='cv.pdf' download="Jordi_Schaefer_CV.pdf">
+                <a className='Footer__cv-tittle' href="../../Jordi_Schaefer_CV.pdf" download="Jordi_Schaefer_CV.pdf">
                     Download CV
                     <p className='Footer__cv-description'> pdf (83KB)</p>
                 </a>     
