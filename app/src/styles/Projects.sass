@@ -18,9 +18,10 @@
     margin-bottom: 4rem
 
 .Project__container
+    position: absolute
     left: 50%
     width: 90%
-    transform: translate(6%, 20%)
+    transform: translate(-50%, 30%)
     background-color: #1b242fdf
     border-radius: 15px
     padding: 3px 0 3px 0
@@ -40,6 +41,8 @@
     color: #f6f6f6
 
 .Project_1
+    display: flex
+    position: relative
     width: 90%
     height: 505px
     border-radius: 15px
@@ -52,20 +55,17 @@
 @media only screen and (min-width: 445px)
     .Project__container
         width: 65%
-        transform: translate(27%, 27%)
+        transform: translate(-50%, 35%)
 @media only screen and (min-width: 650px)
     .Project__container
         width: 48%
-        transform: translate(54%, 25%)
+        transform: translate(-50%, 25%)
 
 @media only screen and (min-width: 900px)
     .Project_1
-        position: relative
-        display: flex
         width: 800px
         height: 505px
     .Project__container
-        position: absolute
         left: 250px
         top: 90px
         width: 300px
