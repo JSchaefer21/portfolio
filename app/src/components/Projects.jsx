@@ -10,7 +10,7 @@ function Projects(){
 
         <h1 className='Projects__title'>PROJECTS</h1>
 
-        <a className='Project_1' href="https://stravita.surge.sh/" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
+        <a className='Project Project-1' href="https://stravita.surge.sh/" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
             <div className='Project__container'onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} >
                 {!hover && <div> 
                     <p className='Project__description'><text className='bold'>Stravita</text>, is a clone from strava.</p>
@@ -25,6 +25,16 @@ function Projects(){
                     <p className='Project__description'>Deployed with Surge, Heroku and MongoDB-Atlas</p>
                 </div> }
                     <p className='Project__description'><text className='bold'>Checkout GitHub</text> repositorie for more information.</p>
+            </div>       
+        </a>
+
+        <a className='Project Project-2' href="https://eggtimer-app.surge.sh/" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
+            <div className='Project__container'>
+                    <p className='Project__description'><text className='bold'>Egg Timer</text>, web application that helps you boil eggs at the specific and perfect point for each one.</p>
+                    <p className='Project__description'>There is a countdown timer and some pictures to help you know how cooked your eggs are at that specific time.</p>
+                    <p className='Project__description'>The timer is set to user preference and an alarm sounds when it reaches the end.</p>
+                    <p className='Project__description'></p>
+                    <p className='Project__description'><text className='bold'>Actually working, testing and learning!</text></p>
             </div>       
         </a>
    
