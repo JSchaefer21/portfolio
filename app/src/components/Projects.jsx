@@ -25,6 +25,10 @@ function Projects(){
                     <p className='Project__description'>Deployed with Surge, Heroku and MongoDB-Atlas</p>
                 </div> }
                     <p className='Project__description'><text className='bold'>Checkout GitHub</text> repositorie for more information.</p>
+                    <text className='Project__description_test'>Username: </text>
+                    <text className='Project__description_test bold2'> test</text>
+                    <text className='Project__description_test'>Password: </text>
+                    <text className='Project__description_test bold2'> 00004444</text>
             </div>       
         </a>
 
