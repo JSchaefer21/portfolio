@@ -25,6 +25,10 @@ function Projects(){
                     <p className='Project__description'>Deployed with Surge, Heroku and MongoDB-Atlas</p>
                 </div> }
                     <p className='Project__description'><text className='bold'>Checkout GitHub</text> repositorie for more information.</p>
+                    <text className='Project__description_test'>Username: </text>
+                    <text className='Project__description_test bold2'> test</text>
+                    <text className='Project__description_test'>Password: </text>
+                    <text className='Project__description_test bold2'> 00004444</text>
             </div>       
         </a>
 
@@ -41,10 +45,10 @@ function Projects(){
         <a className='Project Project-3' href="https://weather-time.surge.sh/" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
             <div className='Project__container'>
                     <p className='Project__description'><text className='bold'>Weather App</text>, web application that gives you the weather at that specific time from anywhere in the world.</p>
-                    <p className='Project__description'>Weather can be found searching by name, using the location device, or by clicking anywhere on the map.</p>
-                    <p className='Project__description'>There is a button to show and hide the map, the coordinates of the point and altitude are also displayed on the map.</p>
+                    <p className='Project__description'>Weather can be found by searching by name, using the location device, or by clicking anywhere on the map.</p>
+                    <p className='Project__description'>There is a button to show and hide the map, the coordinates of the point and its altitude are also displayed on the map.</p>
                     <p className='Project__description'></p>
-                    <p className='Project__description'><text className='bold'>Checkout GitHub</text> repositorie for more information.</p>
+                    <p className='Project__description'><text className='bold'>Actually working, testing and learning!</text></p>
             </div>       
         </a>
    
