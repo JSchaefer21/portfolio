@@ -34,21 +34,21 @@ function Projects(){
 
         <a className='Project Project-2' href="https://eggtimer-app.surge.sh/" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
             <div className='Project__container'>
-                    <p className='Project__description'><text className='bold'>Egg Timer</text>, web application that helps you boil eggs at the specific and perfect point for each one.</p>
-                    <p className='Project__description'>There is a countdown timer and some pictures to help you know how cooked your eggs are at that specific time.</p>
-                    <p className='Project__description'>The timer is set to user preference and an alarm sounds when it reaches the end.</p>
-                    <p className='Project__description'></p>
-                    <p className='Project__description'><text className='bold'>Actually working, testing and learning!</text></p>
+                <p className='Project__description'><text className='bold'>Egg Timer</text>, web application that helps you boil eggs at the specific and perfect point for each one.</p>
+                <p className='Project__description'>There is a countdown timer and some pictures to help you know how cooked your eggs are at that specific time.</p>
+                <p className='Project__description'>The timer is set to user preference and an alarm sounds when it reaches the end.</p>
+                <p className='Project__description'></p>
+                <p className='Project__description'><text className='bold'>Actually working, testing and learning!</text></p>
             </div>       
         </a>
 
         <a className='Project Project-3' href="https://weather-time.surge.sh/" style={{display: "table-cell"}} target="_blank" rel="noreferrer">
             <div className='Project__container'>
-                    <p className='Project__description'><text className='bold'>Weather App</text>, web application that gives you the weather at that specific time from anywhere in the world.</p>
-                    <p className='Project__description'>Weather can be found by searching by name, using the location device, or by clicking anywhere on the map.</p>
-                    <p className='Project__description'>There is a button to show and hide the map, the coordinates of the point and its altitude are also displayed on the map.</p>
-                    <p className='Project__description'></p>
-                    <p className='Project__description'><text className='bold'>Actually working, testing and learning!</text></p>
+                <p className='Project__description'><text className='bold'>Weather App</text>, web application that gives you the weather at that specific time from anywhere in the world.</p>
+                <p className='Project__description'>Weather can be found searching by name, using the location device, or by clicking anywhere on the map.</p>
+                <p className='Project__description'>There is a button to show and hide the map, the coordinates of the point and altitude are also displayed on the map.</p>
+                <p className='Project__description'></p>
+                <p className='Project__description'><text className='bold'>Checkout GitHub</text> repositorie for more information.</p>
             </div>       
         </a>
    
