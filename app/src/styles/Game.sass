@@ -5,9 +5,78 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    background-color: base.$almost-white
+    background-color: #22252c
     height: 150vh
     width: 100%
+
+
+.Game__container-buttons
+    position: absolute
+    top: 2rem
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 8%
+.Game__button
+    border: 3px solid base.$main-color
+    background-color: #c6d2da
+    width: 6rem
+    height: 2rem
+    margin: 0
+    cursor: pointer
+    font-size: 20px
+    font-weight: 500
+    color: base.$light-color
+.Game__button:hover
+    background-color: base.$main-color
+    color: base.$almost-white
+
+.circle
+    height: 20px
+    width: 20px
+    background-color: base.$almost-white
+    box-shadow: 0px 0px 5px 4px base.$main-color
+    border-radius: 100%
+    position: fixed
+    top: 50vh-2vh
+    transform: translate(-50%, -50%)
+    z-index: 1
+.line_top
+    width: 100%
+    height: 0px
+    border-top: 3px solid base.$main-color
+    position: absolute
+    top: 50vh - 4vh
+    z-index: 2
+
+.line_bottom-left
+    position: absolute
+    left: 0
+    bottom: 0px
+    border-top: 3px solid base.$main-color
+    border-right: 3px solid base.$main-color
+    border-top-right-radius: 15px
+    width: 45%
+    height: 4px
+    transform: translateY(90%)
+.line_bottom-right
+    position: absolute
+    right: 0
+    bottom: 0px
+    border-top: 3px solid base.$main-color
+    border-left: 3px solid base.$main-color
+    border-top-left-radius: 15px
+    width: 45%
+    height: 5px
+    transform: translateY(90%)
+
+.line_hole
+    width: 8%
+    height: 4px
+    background-color: base.$almost-white
+    position: absolute
+    bottom: 0px
 
 .win
     width: 100%
@@ -15,131 +84,5 @@
     display: flex
     align-items: center
     justify-content: center
-    background-color: base.$almost-white
-
-
-.circle
-    height: 20px
-    width: 20px
-    background-color: red
-    border-radius: 100%
-    position: fixed
-    top: 50vh-2vh
-    z-index: 1
-.line_top
-    width: 100%
-    height: 4px
-    background-color: black
-    position: absolute
-    top: 50vh-2vh
-    z-index: 2
-.line_bottom
-    width: 100%
-    height: 4px
-    background-color: black
-    position: absolute
-    bottom: -1vh
-.line_hole
-    width: 8%
-    height: 4px
-    background-color: base.$almost-white
-    position: absolute
-    bottom: -1vh
-
-
-
-
-
-
-
-
-
-    
-.Projects__title
-    font-size: 38px
-    font-weight: 700
-    color: base.$dark-color
-    border-bottom: 3px solid base.$light-color
-    padding-bottom: 0.4rem
-    margin-bottom: -2rem
-
-.Project__container
-    position: absolute
-    left: 50%
-    width: 90%
-    transform: translate(-50%, 30%)
-    background-color: #1b242fdf
-    border-radius: 15px
-    padding: 3px 0 3px 0
-
-.Project__description
-    padding: 0px 20px 0 20px
-    color: #cacaca
-    font-size: 14px
-    font-weight: 400
-    line-height: 20px
-    text-align: justify
-    text-decoration: none
-    border-bottom: none
-.Project__description_test
-    padding: 0px 0px 0px 20px
-    color: #cacaca
-    margin: 0
-    font-size: 10px
-    line-height: 2px
-    text-align: justify
-    text-decoration: none
-    border-bottom: none
-.bold
-    font-size: 16px
-    font-weight: 500
-    color: #f6f6f6
-.bold2
-    padding: 0
-    font-size: 11px
-    font-weight: 500
-
-.Project
-    display: flex
-    position: relative
-    width: 90%
-    height: 505px
-    border-radius: 15px
-    border: 3px solid base.$light-color
-
-.Project-1
-    background-image: url('../../public/stravita_resume.jpg')
-    background-size: cover  
-    background-position: center
-
-.Project-2
-    //background-image: url(https://www.ambitiouskitchen.com/wp-content/uploads/2021/09/Perfect-Hardboiled-Eggs-8.jpg)
-    background-image: url('../../public/boiled_eggs.jpg')
-    background-size: cover  
-    background-position: center
-
-.Project-3
-    background-image: url('../../public/weather.jpg')
-    background-size: cover  
-    background-position: center
-
-@media only screen and (min-width: 445px)
-    .Project__container
-        width: 65%
-        transform: translate(-50%, 35%)
-@media only screen and (min-width: 650px)
-    .Project__container
-        width: 48%
-        transform: translate(-50%, 25%)
-
-@media only screen and (min-width: 900px)
-    .Project-1, .Project-2, .Project-3
-        width: 800px
-        height: 505px
-    .Project__container
-        left: 250px
-        top: 90px
-        width: 300px
-        transform: translate(0, 0)
-
-
+    background-color: #22252c
+    color: base.$almost-white

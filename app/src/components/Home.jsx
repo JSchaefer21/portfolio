@@ -1,19 +1,14 @@
-import { useState } from 'react'
 import Projects from './Projects.jsx'
 import Footer from './Footer.jsx'
-import Game from './Game01.jsx'
 import '../styles/Home.sass'
 
-function Home(){
+function Home(props){
 
-    const [view, setView] = useState('projects')
-
-    const handleProjectsClick=() => setView('projects')
-    const handleGameClick=() => setView('game')
+    const handleGameClick = () => props.onGameClicked()
 
     return <div className="Home mw">
 
-        {view === 'projects' && <header className="Home__header mw">
+        <header className="Home__header mw">
             <div className='polygon'>
                 <img className='Home__foto-perfil' src='../../foto_perfil.jpg' alt=''/>
             </div>
@@ -31,20 +26,12 @@ function Home(){
                 <div className="line3"></div>
                 <div className="line4"></div>
             </div>
+        </header>
 
-        </header>}
+        <button className='Home__button' onClick={handleGameClick}>Game</button>
 
-        <div className={view === 'projects'? 'button_container' : 'button_container-top'}>
-            <button className='button button1' onClick={handleProjectsClick}>Projects</button>
-            <button className='button button2' onClick={handleGameClick}>Game</button>
-        </div>
-
-        {view === 'projects' && <Projects/> }
-        {view === 'projects' && <Footer/> }
-
-        {view === 'game' && <Game/> }
-
-
+        <Projects/>
+        <Footer/>
     </div>
 } 
 

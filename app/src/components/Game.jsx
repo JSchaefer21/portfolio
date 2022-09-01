@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, setState } from 'react';
 import '../styles/Game.sass'
 
-function Game(){
+function Game(props){
 
     const random = () => {
         const min = 20
@@ -16,14 +16,12 @@ function Game(){
     const [pos, setPos] = useState(null)
     const [win, setWin] = useState(false)
 
-
     const handleTopContact = () => {
         if(!top) {
             top = true
             bottom = false
             start = end
             end = random()
-            console.log(start, end)
         }
     }
 
@@ -33,27 +31,28 @@ function Game(){
             top = false
             start = end
             end = random()
-            console.log(start, end)
         }
     }
     
     useEffect(() => {
         window.scrollTo({ top: 0 })
-        window.addEventListener('scroll', () => {
-            if (window.scrollY === 0) {
-                handleTopContact()
-            } else if (window.scrollY+1 > window.innerHeight/2)  {
-                if(end>45 && end<55 && !bottom) {
-                    setWin(true)
-                    return
-                }
-                handleBottomContact()
-            }
-            calculate()
-        });
+        window.addEventListener('scroll', scrollFunction)
     }, []);
 
-    const calculate = () => {
+    const scrollFunction = () => {
+        if (window.scrollY === 0) {
+            handleTopContact()
+        } else if (window.scrollY+1 > window.innerHeight/2)  {
+            if(end>45 && end<55 && !bottom) {
+                setWin(true)
+                return
+            }
+            handleBottomContact()
+        }
+        calculatePosition()
+    }
+
+    const calculatePosition = () => {
         let percent = 1-((window.innerHeight/2)-window.scrollY)/(window.innerHeight/2)
         // 0 arriba, 1 abajo
         let position
@@ -65,13 +64,23 @@ function Game(){
         setPos(position)
     }
 
+    const handleBackClick = () => props.onBackClicked()
+    const handleRestartClick = () => {
+        window.scrollTo({ top: 0 })
+        window.location.reload()
+    }
 
     return <>
         <div className='Game'>
+            <div className='Game__container-buttons'>
+                <button className='Game__button' onClick={handleBackClick}>Back</button>
+                <button className='Game__button' onClick={handleRestartClick}>Restart</button>
+            </div>
+
             <div className='circle' style={{"left": `${pos}%`}}></div>
             <div className='line_top'/>
-            <div className='line_bottom'/>
-            <div className='line_hole'/>
+            <div className='line_bottom-left'/>
+            <div className='line_bottom-right'/>
         </div>
         {win===true && <div className='win'>You made it</div>}
         {win===true && <div className='win'>Well done</div>}
