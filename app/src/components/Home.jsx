@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Projects from './Projects.jsx'
 import Footer from './Footer.jsx'
-import Game from './Game.jsx'
+import Game from './Game01.jsx'
 import '../styles/Home.sass'
 
 function Home(){
