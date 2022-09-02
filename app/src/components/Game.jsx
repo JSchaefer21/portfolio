@@ -25,7 +25,6 @@ function Game(props){
             start = end
             end = random()
             setContact(['top', start])
-            console.log('top')
         }
     }
 
@@ -36,7 +35,6 @@ function Game(props){
             start = end
             end = random()
             setContact(['bottom', start])
-            console.log('bottom')
         }
     }
 
@@ -82,10 +80,12 @@ function Game(props){
 
     return <>
         <div className='Game'>
-            <div className='Game__container-buttons'>
-                <button className='Game__button' onClick={handleBackClick}>Back</button>
+            <div className='Game_container-buttons'>
+                <button className='Game_button' onClick={handleBackClick}>Back</button>
                 {/* <button className='Game__button' onClick={handleRestartClick}>Restart</button> */}
             </div>
+
+            <div className='Game_arrow'/>
 
             <div className='circle' style={{"left": `${pos}%`}}></div>
             <div className='line_top'/>
@@ -95,18 +95,19 @@ function Game(props){
             {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
         </div>
 
-
-        {win===true && <div className='win'>You made it</div>}
-        {win===true && <div className='win'>You got lucky, Math.random() is with you</div>}
-        {win===true && <div className='win'>
-                <p>This game was made on React, only with Javascript and CSS</p>
-                <p>100% pixel perfect, fully responsive</p>
-                <p>Without galleries</p>
-                <p>Working with screen sizes, percentages and scroll position</p>
-            </div>}
-        {win===true && <div className='win'></div>}
-        {win===true && <div className='win'></div>}
-        {win===true && <div className='win'></div>}
+        {win===true && <>
+        <div className='win'>You made it</div>
+        <div className='win'>You got lucky, Math.random() is with you</div>
+        <div className='win'>
+            <p>This game was made on React, only with Javascript and CSS</p>
+            <p>100% pixel perfect, fully responsive</p>
+            <p>Without galleries</p>
+            <p>Working with screen sizes, percentages and scroll position</p>
+        </div>
+        <div className='win'></div>
+        <div className='win'></div>
+        <div className='win'></div>
+        </>}
     </>
 } 
 

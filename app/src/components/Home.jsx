@@ -4,6 +4,8 @@ import '../styles/Home.sass'
 
 function Home(props){
 
+    window.scrollTo({ top: 0 })
+    
     const handleGameClick = () => props.onGameClicked()
 
     return <div className="Home mw">
