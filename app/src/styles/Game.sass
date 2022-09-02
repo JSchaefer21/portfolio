@@ -20,6 +20,7 @@
     gap: 8%
 .Game__button
     border: 3px solid base.$main-color
+    border-radius: 2px
     background-color: #c6d2da
     width: 6rem
     height: 2rem
@@ -50,26 +51,21 @@
     top: 50vh - 4vh
     z-index: 2
 
-.line_bottom-left
+.line_bottom
     position: absolute
-    left: 0
-    bottom: 0px
+    width: 45%
+    height: 6px
+    transform: translateY(90%)
     border-top: 3px solid base.$main-color
+    bottom: 0px
+.line_bottom-left
+    left: 0
     border-right: 3px solid base.$main-color
     border-top-right-radius: 15px
-    width: 45%
-    height: 4px
-    transform: translateY(90%)
 .line_bottom-right
-    position: absolute
     right: 0
-    bottom: 0px
-    border-top: 3px solid base.$main-color
     border-left: 3px solid base.$main-color
     border-top-left-radius: 15px
-    width: 45%
-    height: 5px
-    transform: translateY(90%)
 
 .line_hole
     width: 8%
@@ -77,6 +73,27 @@
     background-color: base.$almost-white
     position: absolute
     bottom: 0px
+
+.logo
+    position: absolute
+    color: base.$main-color
+    font-size: 38px
+    opacity: 70%
+    animation: appear 1s ease-in
+@keyframes appear
+  0% 
+    opacity: 0%
+  100% 
+    opacity: 70%
+
+.logo-top
+    transform: translate(-50%, -75%)
+    top: 50vh - 4vh
+.logo-bottom
+    transform: translate(50%, -85%)
+    rotate: 180deg
+    bottom: 0
+
 
 .win
     width: 100%

@@ -9,13 +9,13 @@ function Game(props){
         return ((Math.random()*(max-min+1)+min)).toFixed(0)
     }
 
-    let top = true
+    const [up, setUp] = useState(null)
+    let top = false
     let bottom = false
     let start = 50
     let end = random()
     const [pos, setPos] = useState(null)
     const [win, setWin] = useState(false)
-    const [contact, setContact] = useState(null)
 
     const handleTopContact = () => {
         if(!top) {
@@ -43,16 +43,14 @@ function Game(props){
     const scrollFunction = () => {
         if (window.scrollY === 0) {
             handleTopContact()
-            setContact(['top', start])
+            setUp(true)
         } else if (window.scrollY+1 > window.innerHeight/2)  {
             if(end>45 && end<55 && !bottom) {
                 setWin(true)
                 return
             }
-            else {
-                handleBottomContact()
-                setContact(['bottom', start])
-            }
+            handleBottomContact()
+            setUp(false)
         }
         calculatePosition()
     }
@@ -84,17 +82,14 @@ function Game(props){
 
             <div className='circle' style={{"left": `${pos}%`}}></div>
             <div className='line_top'/>
-            <div className='line_bottom line_bottom-left'/>
-            <div className='line_bottom line_bottom-right'/>
-            {contact && contact[0]==='top' && <div className='material-symbols-rounded logo logo-top' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
-            {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
+            <div className='line_bottom-left'/>
+            <div className='line_bottom-right'/>
+            {up && <div className='logo-top' style={{"left": `${50}%`}}>A</div>}
+            {!up && <div className='logo-bottom' style={{"left": `${20}%`}}>A</div>}
         </div>
         {win===true && <div className='win'>You made it</div>}
         {win===true && <div className='win'>Well done</div>}
         {win===true && <div className='win'>Congrats</div>}
-        {win===true && <div className='win'></div>}
-        {win===true && <div className='win'></div>}
-        {win===true && <div className='win'></div>}
     </>
 } 
 
