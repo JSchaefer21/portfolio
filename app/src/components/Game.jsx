@@ -3,7 +3,7 @@ import '../styles/Game.sass'
 
 function Game(props){
   
-    const [pos, setPos] = useState(null)
+    const [pos, setPos] = useState(50)
     const [win, setWin] = useState(false)
     const [contact, setContact] = useState(null)
 
