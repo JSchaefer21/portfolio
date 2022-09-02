@@ -95,7 +95,7 @@ function Game(props){
             {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
         </div>
 
-        {win===true && <GameFooter onRestartClicked={handleRestartClick}/>}
+        {win===true && <GameFooter onRestartClicked={handleBackClick}/>}
     </>
 } 
 
