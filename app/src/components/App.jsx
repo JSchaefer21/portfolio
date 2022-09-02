@@ -1,30 +1,23 @@
-import { useNavigate, Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useState } from 'react'
 import Home from './Home'
 import Game from './Game.jsx'
 import '../styles/App.sass'
 
 function App () {
 
-    const navigate = useNavigate()
+    const [view, setView] = useState('home')
 
-    /* useEffect(() => {
-        navigate('/')
-    }, []) */
-
-    const handleGameClicked = () => navigate('/game')
-    const handleBackClicked = () => navigate('/')
+    const handleGameClicked = () => setView('game')
+    const handleBackClicked = () => setView('home')
     const handleRestartClicked = () => {
-        //window.location.reload(false)
-        navigate('/game')
+        setView('home')
+        setView('game')
     }
 
     return <div className="App mh mw">
-            <Routes>
-                <Route path="/" element={<Home onGameClicked={handleGameClicked}/>} />
-                <Route path="/game" element={<Game onBackClicked={handleBackClicked} onRestartClicked={handleRestartClicked}/>} />
-            </Routes>
-        </div>
+        {view==='home' && <Home onGameClicked={handleGameClicked}/>}
+        {view==='game' && <Game onBackClicked={handleBackClicked} onRestartClicked={handleRestartClicked}/>} 
+    </div>
 }
 
 export default App
