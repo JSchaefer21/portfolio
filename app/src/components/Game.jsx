@@ -1,4 +1,4 @@
-import { useEffect, useState, setState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/Game.sass'
 
 function Game(props){
@@ -90,8 +90,13 @@ function Game(props){
             {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
         </div>
         {win===true && <div className='win'>You made it</div>}
-        {win===true && <div className='win'>Well done</div>}
-        {win===true && <div className='win'>Congrats</div>}
+        {win===true && <div className='win'>You got lucky, Math.random() is with you</div>}
+        {win===true && <div className='win'>
+                <p>This game was made on React, only with Javascript and CSS</p>
+                <p>100% pixel perfect, fully responsive</p>
+                <p>Without galleries</p>
+                <p>Working with screen sizes, percentages and scroll position</p>
+            </div>}
         {win===true && <div className='win'></div>}
         {win===true && <div className='win'></div>}
         {win===true && <div className='win'></div>}
