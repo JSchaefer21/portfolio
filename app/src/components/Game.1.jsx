@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import GameFooter from './GameFooter'
 import '../styles/Game.sass'
 
 function Game(props){
@@ -17,7 +16,7 @@ function Game(props){
     let top = true
     let bottom = false
     let start = 50
-    let end = random()
+    let end = 50 /* random() */
 
     const handleTopContact = () => {
         if(!top) {
@@ -87,7 +86,7 @@ function Game(props){
 
             <div className='Game_arrow'/>
 
-            <div className='circle' style={{"left": `${pos}%`}}> </div>
+            <div className='circle' style={{"left": `${pos}%`}}>{window.scrollY} {window.innerHeight}</div>
             <div className='line_top'/>
             <div className='line_bottom line_bottom-left'/>
             <div className='line_bottom line_bottom-right'/>
@@ -95,7 +94,21 @@ function Game(props){
             {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
         </div>
 
-        {win===true && <GameFooter onRestartClicked={handleRestartClick}/>}
+        {win===true && <>
+        <div className='win'>You made it</div>
+        <div className='win'>
+            <p id='drop' className=''>You got lucky, Math.random() is with you</p>
+        </div>
+        <div className='win'>
+            <p>This game was made on React, only with Javascript and CSS</p>
+            <p>100% pixel perfect, fully responsive</p>
+            <p>Without galleries</p>
+            <p>Working with screen sizes, percentages and scroll position</p>
+        </div>
+        <div className='win'></div>
+        <div className='win'></div>
+        <div className='win'></div>
+        </>}
     </>
 } 
 

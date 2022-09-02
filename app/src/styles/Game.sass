@@ -114,7 +114,7 @@
 
 .win
     width: 100%
-    height: 300px
+    height: 50vh
     display: flex
     align-items: center
     justify-content: center
@@ -125,3 +125,74 @@
 p
     margin: 0.6rem
     z-index: 1
+
+
+.drop0
+    transform-origin: bottom right 
+    animation: drop0 0.8s ease-in
+    rotate: -91deg
+.drop1
+    transform-origin: bottom left 
+    animation: drop1 0.8s ease-in
+    rotate: 92deg
+
+
+@keyframes drop0
+  0% 
+    rotate: 0deg
+  100% 
+    rotate: -91deg
+@keyframes drop1
+  0% 
+    rotate: 0deg
+  100% 
+    rotate: 92deg
+
+.move0
+    animation: mov0 2s ease-in-out infinite
+@keyframes mov0
+  0% 
+    rotate: -93deg
+  50% 
+    rotate: -87deg
+  100% 
+    rotate: -93deg
+.move
+    animation: mov 3s ease-in-out infinite
+@keyframes mov
+  0% 
+    rotate: 93deg
+  50% 
+    rotate: 85deg
+  100% 
+    rotate: 93deg
+
+    
+.rotate
+    position: absolute
+    z-index: 1
+    animation: rotate 0.5s linear infinite, goOut 4s normal forwards
+@keyframes rotate
+  0% 
+    rotate: 0deg
+  100% 
+    rotate: 360deg
+@keyframes goOut
+  0% 
+    left: 40%
+    bottom: 50%
+  100% 
+    left: -60%
+    bottom: 80%
+
+.limit
+    padding: 1rem
+    width: 96%
+    animation: light 3s ease-in-out infinite
+@keyframes light
+  0% 
+    box-shadow: 0px -20px 15px -15px base.$main-color
+  50% 
+    box-shadow: 0px -10px 15px -15px base.$main-color
+  100% 
+    box-shadow: 0px -20px 15px -15px base.$main-color
