@@ -8,8 +8,8 @@ function Game(props){
     const [contact, setContact] = useState(null)
 
     const random = () => {
-        const min = 20
-        const max = 80
+        const min = 15
+        const max = 85
         return ((Math.random()*(max-min+1)+min)).toFixed(0)
     }
 
@@ -74,15 +74,22 @@ function Game(props){
 
     const handleBackClick = () => props.onBackClicked()
     const handleRestartClick = () => {
-        window.scrollTo({ top: 0 })
-        window.location.reload()
+        props.onRestartClicked()
+        /* top = true
+        bottom = false
+        start = 50
+        end = random()
+        setPos(50)
+        setWin(false)
+        setContact(null)
+        window.scrollTo({ top: 0 }) */
     }
 
     return <>
         <div className='Game'>
             <div className='Game_container-buttons'>
                 <button className='Game_button' onClick={handleBackClick}>Back</button>
-                {/* <button className='Game__button' onClick={handleRestartClick}>Restart</button> */}
+                <button className='Game_button' onClick={handleRestartClick}>Restart</button>
             </div>
 
             <div className='Game_arrow'/>

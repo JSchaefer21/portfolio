@@ -6,15 +6,15 @@ import '../styles/App.sass'
 function App () {
 
     const [view, setView] = useState('home')
+    const [key, setKey] = useState(null)
 
     const handleGameClicked = () => setView('game')
     const handleBackClicked = () => setView('home')
     const handleRestartClicked = () => {
-        setView('home')
-        setView('game')
+        setKey(Date.now())
     }
 
-    return <div className="App mh mw">
+    return <div key={key} className="App mh mw">
         {view==='home' && <Home onGameClicked={handleGameClicked}/>}
         {view==='game' && <Game onBackClicked={handleBackClicked} onRestartClicked={handleRestartClicked}/>} 
     </div>
