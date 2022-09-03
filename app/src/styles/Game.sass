@@ -1,198 +1,189 @@
 @use 'base'
 
 .Game
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    background-color: #22252c
-    height: 150vh
-    width: 100%
-
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: #22252c
+  height: 150vh
+  width: 100%
 
 .Game_container-buttons
-    position: absolute
-    top: 3rem
-    width: 100%
-    display: flex
-    flex-direction: row
-    justify-content: center
-    gap: 8%
+  position: absolute
+  top: 3rem
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  gap: 8%
 .Game_button
-    border: 3px solid base.$main-color
-    border-radius: 2px
-    background-color: base.$almost-white
-    width: 6rem
-    height: 2.2rem
-    margin: 0
-    cursor: pointer
-    font-size: 20px
-    font-weight: 500
-    color: base.$light-color
+  border: 3px solid base.$main-color
+  border-radius: 2px
+  background-color: base.$almost-white
+  width: 6rem
+  height: 2.2rem
+  margin: 0
+  cursor: pointer
+  font-size: 20px
+  font-weight: 500
+  color: base.$light-color
 .Game_button:hover
-    background-color: base.$main-color
-    color: base.$almost-white
+  background-color: base.$main-color
+  color: base.$almost-white
 
 .Game_arrow
-    position: absolute
-    width: 28px
-    height: 28px
-    border-top: 3px solid base.$main-color
-    border-right: 3px solid base.$main-color
-    border-radius: 3px
-    rotate: 135deg
-    animation: oscile 3.5s ease-in-out infinite
+  position: absolute
+  width: 28px
+  height: 28px
+  border-top: 3px solid base.$main-color
+  border-right: 3px solid base.$main-color
+  border-radius: 3px
+  rotate: 135deg
+  animation: oscile 3.5s ease-in-out infinite
 @keyframes oscile
-  0% 
+  0%
     top: 10rem
-  50% 
+  50%
     top: 12rem
-  100% 
+  100%
     top: 10rem
-
-
 
 .circle
-    height: 20px
-    width: 20px
-    background-color: base.$almost-white
-    box-shadow: 0px 0px 5px 4px base.$main-color
-    border-radius: 100%
-    position: fixed
-    top: 50vh-2vh
-    transform: translate(-50%, -50%)
+  height: 20px
+  width: 20px
+  background-color: base.$almost-white
+  box-shadow: 0px 0px 5px 4px base.$main-color
+  border-radius: 100%
+  position: fixed
+  top: 50vh-2vh
+  transform: translate(-50%, -50%)
 .line_top
-    width: 100%
-    height: 0px
-    border-top: 3px solid base.$main-color
-    position: absolute
-    top: 50vh - 4vh
-    z-index: 1
-
+  width: 100%
+  height: 0px
+  border-top: 3px solid base.$main-color
+  position: absolute
+  top: 50vh - 4vh
+  z-index: 1
 .line_bottom
-    position: absolute
-    width: 45%
-    height: 6px
-    transform: translateY(90%)
-    border-top: 3px solid base.$main-color
-    bottom: 0px
+  position: absolute
+  width: 45%
+  height: 6px
+  transform: translateY(90%)
+  border-top: 3px solid base.$main-color
+  bottom: 0px
 .line_bottom-left
-    left: 0
-    border-right: 3px solid base.$main-color
-    border-top-right-radius: 15px
+  left: 0
+  border-right: 3px solid base.$main-color
+  border-top-right-radius: 15px
 .line_bottom-right
-    right: 0
-    border-left: 3px solid base.$main-color
-    border-top-left-radius: 15px
-
+  right: 0
+  border-left: 3px solid base.$main-color
+  border-top-left-radius: 15px
 .line_hole
-    width: 8%
-    height: 4px
-    background-color: base.$almost-white
-    position: absolute
-    bottom: 0px
+  width: 8%
+  height: 4px
+  background-color: base.$almost-white
+  position: absolute
+  bottom: 0px
+
 
 .logo
-    position: absolute
-    color: base.$main-color
-    opacity: 80%
-    animation: appear 0.8s ease-in
+  position: absolute
+  color: base.$main-color
+  opacity: 80%
+  animation: appear 0.8s ease-in
 @keyframes appear
-  0% 
+  0%
     opacity: 0%
-  100% 
+  100%
     opacity: 80%
-
 .logo-top
-    transform: translate(-50%, -75%)
-    top: 50vh - 4vh
+  transform: translate(-50%, -75%)
+  top: 50vh - 4vh
 .logo-bottom
-    transform: translate(50%, -85%)
-    rotate: 180deg
-    bottom: 0
-
+  transform: translate(50%, -85%)
+  rotate: 180deg
+  bottom: 0
 
 .win
-    width: 100%
-    height: 50vh
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    background-color: #22252c
-    color: base.$almost-white
-    text-align: center
+  width: 100%
+  height: 50vh
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background-color: #22252c
+  color: base.$almost-white
+  text-align: center
 p
-    margin: 0.6rem
-    z-index: 1
+  margin: 0.6rem
+  z-index: 1
 
 
-.drop0
-    transform-origin: bottom right 
-    animation: drop0 0.8s ease-in
-    rotate: -91deg
-.drop1
-    transform-origin: bottom left 
-    animation: drop1 0.8s ease-in
-    rotate: 92deg
-
-
-@keyframes drop0
-  0% 
+.drop-left
+  transform-origin: bottom left
+  animation: drop-left 0.8s ease-in
+  rotate: 93deg
+@keyframes drop-left
+  0%
     rotate: 0deg
-  100% 
-    rotate: -91deg
-@keyframes drop1
-  0% 
+  100%
+    rotate: 93deg
+.drop-right
+  transform-origin: bottom right
+  animation: drop-right 0.8s ease-in
+  rotate: -93deg
+@keyframes drop-right
+  0%
     rotate: 0deg
-  100% 
-    rotate: 92deg
-
-.move0
-    animation: mov0 2s ease-in-out infinite
-@keyframes mov0
-  0% 
+  100%
     rotate: -93deg
-  50% 
+
+.move-left
+  animation: move-left 3s ease-in-out infinite
+@keyframes move-left
+  0%
+    rotate: 93deg
+  50%
+    rotate: 86deg
+  100%
+    rotate: 93deg
+.move-right
+  animation: move-right 2s ease-in-out infinite
+@keyframes move-right
+  0%
+    rotate: -93deg
+  50%
     rotate: -87deg
-  100% 
+  100%
     rotate: -93deg
-.move
-    animation: mov 3s ease-in-out infinite
-@keyframes mov
-  0% 
-    rotate: 93deg
-  50% 
-    rotate: 85deg
-  100% 
-    rotate: 93deg
 
-    
 .rotate
-    position: absolute
-    z-index: 1
-    animation: rotate 0.5s linear infinite, goOut 4s normal forwards
+  position: absolute
+  z-index: 1
+  animation: rotate 0.5s linear infinite, move-out 4s normal forwards
 @keyframes rotate
-  0% 
+  0%
     rotate: 0deg
-  100% 
+  100%
     rotate: 360deg
-@keyframes goOut
-  0% 
+@keyframes move-out
+  0%
     left: 40%
     bottom: 50%
-  100% 
+  100%
     left: -60%
     bottom: 80%
 
 .limit
-    padding: 1rem
-    width: 96%
-    animation: light 3s ease-in-out infinite
+  padding: 1rem
+  width: 96%
+  animation: light 3s ease-in-out infinite
 @keyframes light
-  0% 
+  0%
     box-shadow: 0px -20px 15px -15px base.$main-color
-  50% 
+  50%
     box-shadow: 0px -10px 15px -15px base.$main-color
-  100% 
+  100%
     box-shadow: 0px -20px 15px -15px base.$main-color

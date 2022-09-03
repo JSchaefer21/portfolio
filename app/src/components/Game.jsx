@@ -17,7 +17,7 @@ function Game(props){
     let top = true
     let bottom = false
     let start = 50
-    let end = random()
+    let end = 47 /* random() */
 
     const handleTopContact = () => {
         if(!top) {
