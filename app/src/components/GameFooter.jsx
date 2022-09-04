@@ -42,7 +42,9 @@ function Game(props){
             if (window.scrollY > window.innerHeight*4.75)  {
                 const elem= document.getElementById('Footer')
                 elem.classList.add('Footer-transform')
-                setTimeout(() => props.onRestartClicked(), 2200)
+                const elem2= document.getElementById('limit')
+                elem2.classList.add('limit-remove')
+                setTimeout(() => props.onRestartClicked(), 2600)
             }
         })
     }, []);
@@ -63,14 +65,16 @@ function Game(props){
         </div>
         <div className='Space_container'></div>
         <div className='Space_container' style={{"position": "relative"}}>
-            <p id='rotate'>stop scrolling</p>
+            <p id='rotate'>Stop, you're breaking it</p>
         </div>
         <div className='Space_container'></div>
         <div className='Space_container'></div>
         <div className='Space_container'>
             <div className='gandalf'/>
-            <p className='limit'>You Shall Not Pass!</p>
+            <p id='limit' className='limit'>You Shall Not Pass!</p>
         </div>
+        <div className='Space_container'></div>
+        <div className='Space_container'></div>
         <div className='Space_container'></div>
     </div>
 } 

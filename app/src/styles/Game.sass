@@ -182,7 +182,7 @@ p
 .rotate
   position: absolute
   z-index: 1
-  animation: rotate 0.5s linear infinite, move-out 4s normal forwards
+  animation: rotate 0.35s linear infinite, move-out 3.5s normal forwards
 @keyframes rotate
   0%
     rotate: 0deg
@@ -190,11 +190,11 @@ p
     rotate: 360deg
 @keyframes move-out
   0%
-    left: 40%
+    left: 36%
     bottom: 50%
   100%
     left: -60%
-    bottom: 80%
+    bottom: 160%
 
 
 .gandalf
@@ -205,13 +205,13 @@ p
   height: 65px
   width:  90px
   margin: 0
-  margin-bottom: -10px
+  margin-bottom: -7px
 
 .limit
   padding: 0.7rem
   width: 96%
   animation: light 2.8s ease-in-out infinite
-  font-size: 14px
+  font-size: 13px
 @keyframes light
   0%
     box-shadow: 0px -12px 15px -15px base.$main-color
@@ -219,6 +219,15 @@ p
     box-shadow: 0px -20px 15px -15px base.$main-color
   100%
     box-shadow: 0px -12px 15px -15px base.$main-color
+
+.limit-remove
+  animation: remove 2s linear
+  color: #000000
+@keyframes remove
+  0%
+  100% 
+    color: #000000
+
 
 .Footer
   background-color: #22252c
