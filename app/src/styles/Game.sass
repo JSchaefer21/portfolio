@@ -71,7 +71,7 @@
   height: 6px
   transform: translateY(90%)
   border-top: 3px solid base.$main-color
-  bottom: 0px
+  bottom: calc(0px - (100vh - 100%))
 .line_bottom-left
   left: 0
   border-right: 3px solid base.$main-color
@@ -85,7 +85,7 @@
   height: 4px
   background-color: base.$almost-white
   position: absolute
-  bottom: 0px
+  bottom: calc(0px - (100vh - 100%))
 
 
 .logo
@@ -104,7 +104,7 @@
 .logo-bottom
   transform: translate(50%, -85%)
   rotate: 180deg
-  bottom: 0
+  bottom: calc(0px - (100vh - 100%))
 
 .Space_container
   width: 100%
@@ -182,10 +182,16 @@ p
 .rotate
   position: absolute
   z-index: 1
-  animation: rotate 0.35s linear infinite, move-out 3.5s normal forwards
+  animation: rotate 0.35s linear infinite, move-out 3s ease-out forwards
 @keyframes rotate
   0%
     rotate: 0deg
+  25%
+    rotate: 90deg
+  50%
+    rotate: 180deg
+  75%
+    rotate: 270deg
   100%
     rotate: 360deg
 @keyframes move-out
@@ -209,7 +215,7 @@ p
 
 .limit
   padding: 0.7rem
-  width: 96%
+  width: 90%
   animation: light 2.8s ease-in-out infinite
   font-size: 13px
 @keyframes light
@@ -220,13 +226,8 @@ p
   100%
     box-shadow: 0px -12px 15px -15px base.$main-color
 
-.limit-remove
-  animation: remove 2s linear
-  color: #000000
-@keyframes remove
-  0%
-  100% 
-    color: #000000
+.hide
+  z-index: -1
 
 
 .Footer

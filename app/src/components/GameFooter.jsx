@@ -43,8 +43,8 @@ function Game(props){
                 const elem= document.getElementById('Footer')
                 elem.classList.add('Footer-transform')
                 const elem2= document.getElementById('limit')
-                elem2.classList.add('limit-remove')
-                setTimeout(() => props.onResetClicked(), 2600)
+                elem2.classList.add('hide')
+                setTimeout(() => props.onResetClicked(), 2800)
             }
         })
     }, []);
