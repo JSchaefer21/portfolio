@@ -44,7 +44,7 @@ function Game(props){
                 elem.classList.add('Footer-transform')
                 const elem2= document.getElementById('limit')
                 elem2.classList.add('limit-remove')
-                setTimeout(() => props.onRestartClicked(), 2600)
+                setTimeout(() => props.onResetClicked(), 2600)
             }
         })
     }, []);

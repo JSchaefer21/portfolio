@@ -17,7 +17,7 @@ function Game(props){
     let top = true
     let bottom = false
     let start = 50
-    let end = 47 /* random() */
+    let end = random()
 
     const handleTopContact = () => {
         if(!top) {
@@ -37,7 +37,6 @@ function Game(props){
             end = random()
             setContact(['bottom', start])
         }
-        console.log(window.scrollY)
     }
 
     const scrollFunction = () => {
@@ -75,14 +74,14 @@ function Game(props){
 
 
     const handleBackClick = () => props.onBackClicked()
-    const handleRestartClick = () => props.onRestartClicked()
+    const handleResetClick = () => props.onResetClicked()
 
 
     return <>
         <div className='Game'>
             <div className='Game_container-buttons'>
                 <button className='Game_button' onClick={handleBackClick}>Back</button>
-                <button className='Game_button' onClick={handleRestartClick}>Restart</button>
+                <button className='Game_button' onClick={handleResetClick}>Reset</button>
             </div>
 
             <div className='Game_arrow'/>
@@ -95,7 +94,7 @@ function Game(props){
             {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
         </div>
 
-        {win===true && <GameFooter onRestartClicked={handleBackClick}/>}
+        {win===true && <GameFooter onResetClicked={handleBackClick}/>}
     </>
 } 
 
