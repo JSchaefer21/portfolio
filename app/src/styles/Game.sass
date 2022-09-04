@@ -106,14 +106,13 @@
   rotate: 180deg
   bottom: 0
 
-.win
+.Space_container
   width: 100%
   height: 50vh
   display: flex
   align-items: center
   justify-content: center
   flex-direction: column
-  background-color: #22252c
   color: base.$almost-white
   text-align: center
 p
@@ -123,20 +122,41 @@ p
 
 .drop-left
   transform-origin: bottom left
-  animation: drop-left 0.8s ease-in
-  rotate: 93deg
+  animation: drop-left 0.8s ease-in-out
+  rotate: 108deg
 @keyframes drop-left
   0%
     rotate: 0deg
   100%
-    rotate: 93deg
+    rotate: 108deg
 .drop-right
   transform-origin: bottom right
-  animation: drop-right 0.8s ease-in
-  rotate: -93deg
+  animation: drop-right 0.8s ease-in-out
+  rotate: -108deg
 @keyframes drop-right
   0%
     rotate: 0deg
+  100%
+    rotate: -108deg
+
+.middle-left
+  animation: middle-left 2s ease-in-out
+  rotate: 92deg
+@keyframes middle-left
+  0%
+    rotate: 108deg
+  50%
+    rotate: 81deg
+  100%
+    rotate: 92deg
+.middle-right
+  animation: middle-right 2s ease-in-out
+  rotate: -93deg
+@keyframes middle-right
+  0%
+    rotate: -108deg
+  50%
+    rotate: -81deg
   100%
     rotate: -93deg
 
@@ -144,11 +164,11 @@ p
   animation: move-left 3s ease-in-out infinite
 @keyframes move-left
   0%
-    rotate: 93deg
+    rotate: 92deg
   50%
-    rotate: 86deg
+    rotate: 87deg
   100%
-    rotate: 93deg
+    rotate: 92deg
 .move-right
   animation: move-right 2s ease-in-out infinite
 @keyframes move-right
@@ -176,14 +196,39 @@ p
     left: -60%
     bottom: 80%
 
+
+.gandalf
+  background-image: url('../../public/gandalf.png')
+  background-size: contain  
+  background-position: center
+  background-repeat: no-repeat
+  height: 65px
+  width:  90px
+  margin: 0
+  margin-bottom: -10px
+
 .limit
-  padding: 1rem
+  padding: 0.7rem
   width: 96%
-  animation: light 3s ease-in-out infinite
+  animation: light 2.8s ease-in-out infinite
+  font-size: 14px
 @keyframes light
   0%
-    box-shadow: 0px -20px 15px -15px base.$main-color
+    box-shadow: 0px -12px 15px -15px base.$main-color
   50%
-    box-shadow: 0px -10px 15px -15px base.$main-color
-  100%
     box-shadow: 0px -20px 15px -15px base.$main-color
+  100%
+    box-shadow: 0px -12px 15px -15px base.$main-color
+
+.Footer
+  background-color: #22252c
+
+.Footer-transform
+  animation: transform 2s linear
+  background-color: #000000
+@keyframes transform
+  0%
+    background-color: #22252c 
+  100% 
+    background-color: #000000 
+    
