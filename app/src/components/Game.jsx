@@ -7,8 +7,8 @@ function Game(props){
     const [pos, setPos] = useState(50)
     const [win, setWin] = useState(false)
     const [contact, setContact] = useState(null)
-    const [sideBarView, setSideBarView] = useState(false)
-    const sideBar = useRef(false)
+    const [sidebarView, setSidebarView] = useState(false)
+    const sidebar = useRef(false)
     const min = useRef(6)
     const max = useRef(94)
     
@@ -28,7 +28,7 @@ function Game(props){
             start = end
             end = random()
             setContact(['top', start])
-            handleSideBar()
+            handlesidebar()
         }
     }
 
@@ -39,7 +39,7 @@ function Game(props){
             start = end
             end = random()
             setContact(['bottom', start])
-            handleSideBar()
+            handlesidebar()
         }
     }
 
@@ -76,8 +76,8 @@ function Game(props){
         window.addEventListener('scroll', scrollFunction)
     }, []);
 
-    const handleSideBar = () => {
-        if(sideBar.current) {
+    const handlesidebar = () => {
+        if(sidebar.current) {
             if (end > 50 && start > (min.current+3)) {
                 if (min.current<44)
                     min.current = min.current+2 }
@@ -92,12 +92,12 @@ function Game(props){
     }
 
     const handleSideClick = () => {
-        if(!sideBarView) {
-            setSideBarView(true)
-            sideBar.current=true
+        if(!sidebarView) {
+            setSidebarView(true)
+            sidebar.current=true
         } else {
-            setSideBarView(false)
-            sideBar.current=false
+            setSidebarView(false)
+            sidebar.current=false
             min.current = 6
             max.current = 94
         }
@@ -119,9 +119,9 @@ function Game(props){
             {contact && contact[0]==='top' && <div className='material-symbols-rounded logo logo-top' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
             {contact && contact[0]==='bottom' && <div className='material-symbols-rounded logo logo-bottom' style={{"left": `${contact[1]}%`}}>wifi_tethering</div>}
 
-            <button className='side_bar-button' onClick={handleSideClick}>{sideBarView? 'Remove side-bar': 'Active side-bar'}</button>
-            {sideBarView && <div className='side_bar side_bar-left' style={{"left": `calc(${min.current}% - 4.5% )`}}> </div> }
-            {sideBarView && <div className='side_bar side_bar-right' style={{"left": `calc(${max.current}% + 2.5% )`}}> </div> }
+            <button className='sidebar-button' onClick={handleSideClick}>{sidebarView? 'Remove sidebar': 'Active sidebar'}</button>
+            {sidebarView && <div className='sidebar' style={{"left": `calc(${min.current}% - 4.5% )`}}> </div> }
+            {sidebarView && <div className='sidebar' style={{"left": `calc(${max.current}% + 2.5% )`}}> </div> }
         </div>
 
         {win===true && <GameFooter onResetClicked={() => props.onBackClicked()}/>}

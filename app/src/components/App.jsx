@@ -5,7 +5,7 @@ import '../styles/App.sass'
 
 function App () {
 
-    const [view, setView] = useState('game')
+    const [view, setView] = useState('home')
     const [key, setKey] = useState(null)
 
     const handleGameClicked = () => setView('game')
