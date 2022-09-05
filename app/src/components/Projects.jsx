@@ -36,7 +36,7 @@ function Projects(){
 
                     <div className='Project__button-container'>
                         <a className='Project__button' href="https://stravita.surge.sh/" target="_blank" rel="noreferrer">Visit site</a>    
-                        <button className='Project__button-more' onClick={handleMoreClick}>+</button>    
+                        <button className='Project__button Project__button-more' onClick={handleMoreClick}>+</button>    
                         <a className='Project__button' href="https://github.com/JSchaefer21/stravita" target="_blank" rel="noreferrer">See code</a>    
                     </div>
             </div>   
