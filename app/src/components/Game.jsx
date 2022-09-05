@@ -74,6 +74,8 @@ function Game(props){
     useEffect(() => {
         window.scrollTo({ top: 0 })
         window.addEventListener('scroll', scrollFunction)
+
+        return () => window.removeEventListener('scroll', scrollFunction)
     }, []);
 
     const handlesidebar = () => {

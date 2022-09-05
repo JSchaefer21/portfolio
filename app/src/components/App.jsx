@@ -8,11 +8,9 @@ function App () {
     const [view, setView] = useState('home')
     const [key, setKey] = useState(null)
 
-    const handleGameClicked = () => setView('game')
-    const handleBackClicked = () => setView('home')
-    const handleResetClicked = () => {
-        setKey(Date.now())
-    }
+    const handleGameClicked = () => setView('game'); window.scrollTo({ top: 0 })
+    const handleBackClicked = () => setView('home'); window.scrollTo({ top: 0 })
+    const handleResetClicked = () => setKey(Date.now()); window.scrollTo({ top: 0 })
 
     return <div key={key} className="App mh mw">
         {view==='home' && <Home onGameClicked={handleGameClicked}/>}

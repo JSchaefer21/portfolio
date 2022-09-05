@@ -1,10 +1,23 @@
+import { useState, useEffect } from 'react'
 import Projects from './Projects.jsx'
 import Footer from './Footer.jsx'
 import '../styles/Home.sass'
+import '../styles/MenuBar.sass'
 
 function Home(props){
 
-    window.scrollTo({ top: 0 })
+    const [menu, setMenu] = useState(false)
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+    const handleMenuClick = () => setMenu(!menu)
+
+    useEffect(() => {
+        const changeWidth = () => setScreenWidth(window.innerWidth)
+        window.addEventListener('resize', changeWidth)
+
+        return () => window.removeEventListener('resize', changeWidth)
+    }, [])
+
     
     const handleGameClick = () => props.onGameClicked()
 
@@ -28,9 +41,20 @@ function Home(props){
                 <div className="line3"></div>
                 <div className="line4"></div>
             </div>
+
+            <button className='Home__button' onClick={handleGameClick}>Game</button>
         </header>
 
-        <button className='Home__button' onClick={handleGameClick}>Game</button>
+
+
+        <div className="Menu_container">
+            <button className="btn" onClick={handleMenuClick}> Menu </button>
+            {(menu || screenWidth > 650) && <ul className="list">
+                <li className="items">Projects</li>
+                <li className="items">About me</li>
+                <li className="items">Contact</li>
+            </ul> }
+        </div>
 
         <Projects/>
         <Footer/>
