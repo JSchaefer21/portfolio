@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/Game.sass'
 
-function Game(props){
+function GameFooter(props){
   
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -79,4 +79,4 @@ function Game(props){
     </div>
 } 
 
-export default Game
+export default GameFooter
