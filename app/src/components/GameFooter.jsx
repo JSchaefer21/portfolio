@@ -17,7 +17,7 @@ function GameFooter(props){
                 setTimeout(() => elem.classList.add('middle-left'), 800)
                 setTimeout(() => elem.classList.add('move-left'), 2800)
             }
-            if (window.scrollY > window.innerHeight*2.1)  {
+            if (window.scrollY > window.innerHeight*2.2)  {
                 const elem0= document.getElementById('drop0')
                 const elem1= document.getElementById('drop1')
                 const elem2= document.getElementById('drop2')

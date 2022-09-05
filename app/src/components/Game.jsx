@@ -79,13 +79,14 @@ function Game(props){
     const handlesidebar = () => {
         if(sidebar.current) {
             if (end > 50 && start > (min.current+3)) {
-                if (min.current<44)
-                    min.current = min.current+2 }
+                if (min.current<44) min.current = min.current+1.5 }
+            else if (min.current>44) max.current = max.current+1.5
+            else if (max.current<56) min.current = min.current+1.5
             else {
                 if (max.current>56)
-                    max.current = max.current-2
+                    max.current = max.current-1.5
                 else if (start < (max.current-3))
-                    min.current = min.current+2
+                    min.current = min.current+1.5
             }
             
         }
