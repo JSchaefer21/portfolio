@@ -51,7 +51,7 @@ function Home(props){
             <button className="btn" onClick={handleMenuClick}> Menu </button>
             {(menu || screenWidth > 650) && <ul className="list">
                 <li className="items">Projects</li>
-                <li className="items">About me</li>
+                <li className="items">About  me</li>
                 <li className="items">Contact</li>
             </ul> }
         </div>
