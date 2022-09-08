@@ -1,18 +1,6 @@
 @use 'base'
 
 
-@keyframes animation-in
-  from
-    transform: translateY(100%)
-  to
-    transform: translateY(0%)
-@keyframes animation-out
-  from
-    transform: translateY(0%)
-  to
-    transform: translateY(-100%)
-  
-
 .Game
   display: flex
   flex-direction: column
@@ -26,6 +14,17 @@
   animation: animation-in 1.5s ease-out
 .Game-out
   animation: animation-out 1.5s ease-in
+@keyframes animation-in
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0%)
+@keyframes animation-out
+  from
+    transform: translateY(0%)
+  to
+    transform: translateY(-100%)
+
 
 .Game_container-buttons
   position: absolute

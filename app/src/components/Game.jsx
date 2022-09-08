@@ -70,7 +70,6 @@ function Game(props){
         setPos(position)
     }
 
-
     useEffect(() => {
         window.scrollTo({ top: 0 })
         window.addEventListener('scroll', scrollFunction)

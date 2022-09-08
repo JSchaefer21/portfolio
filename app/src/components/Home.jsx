@@ -26,6 +26,17 @@ function Home(props){
         setTimeout(() => props.onGameClicked(), 1500)
     }
 
+    const handleProjectsClick = () => {
+        
+    }
+    const handleAboutClick = () => {
+
+    }
+    const handleContactClick = () => {
+        handleMenuClick()
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth'})
+    }
+
     return <div className="Home">
 
         <div className='space'/>
@@ -55,11 +66,11 @@ function Home(props){
 
 
         <div className="Menu_container">
-            <button className="btn" onClick={handleMenuClick}> Menu </button>
+            <button className="btn" onClick={handleMenuClick}></button>
             {(menu || screenWidth > 650) && <ul className="list">
-                <li className="items">Projects</li>
-                <li className="items">About me</li>
-                <li className="items">Contact</li>
+                <li className="items" onClick={handleProjectsClick}>Projects</li>
+                <li className="items" onClick={handleAboutClick}>About me</li>
+                <li className="items" onClick={handleContactClick}>Contact</li>
             </ul> }
         </div>
 

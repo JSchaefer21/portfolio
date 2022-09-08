@@ -6,7 +6,6 @@
     bborder-bottom: 5px solid base.$main-color
     position: relative
 
-
 .list
     list-style-type: none
     background-color: base.$almost-white
@@ -15,8 +14,8 @@
     align-items: center
     gap: 5rem
     margin: 0
-    margin-top: 0.6rem
     padding: 0
+    padding-top: 1.5rem
 .items
     z-index: 1
     font-size: 20px
@@ -31,32 +30,36 @@
         background-color: base.$main-color
         color: base.$almost-white
         border-radius: 5px
-.btn 
+.btn
     display: none
+    -webkit-appearance: none
     position: absolute
-    left: 10px
-    top: 7px
-    padding: 5px
-    color: #000
-    font-size: 18px
-    background-color: red
-
-
+    left: 20px
+    top: 20px
+    background-image: url('../../public/hamburger-menu-icon.png')
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    padding: 0
+    margin: 0
+    border: none
+    height: 30px
+    width: 30px
 
 @media screen and (max-width: 650px)
-    .list 
+    .Menu_container
+        background-color: #22252c
+        background-color: base.$almost-white
+        height: 60px
+    .list
         flex-direction: column
         gap: 0
-    
-    .items:nth-child(1)
-        border-top: 2px solid base.$main-color
+        margin: 0
+        padding: 0
         margin-top: 50px
-    
-    .items 
+    .items
         width: 100%
         text-align: center
         padding: 0.6rem 0
-    
-    .btn 
+    .btn
         display: block
-    
