@@ -51,6 +51,7 @@ function GameFooter(props){
 
 
     return <div id='Footer' className='Footer'>
+        <div style={{"height": "150vh"}}></div>
         <div className='Space_container'>
             <p id='drop-right' className=''>You made it</p>
         </div>
@@ -67,15 +68,12 @@ function GameFooter(props){
         <div className='Space_container' style={{"position": "relative"}}>
             <p id='rotate'>Stop, you're breaking it</p>
         </div>
-        <div className='Space_container'></div>
-        <div className='Space_container'></div>
+        <div style={{"height": "100vh"}}></div>
         <div className='Space_container'>
             <div className='gandalf'/>
             <p id='limit' className='limit'>You Shall Not Pass!</p>
         </div>
-        <div className='Space_container'></div>
-        <div className='Space_container'></div>
-        <div className='Space_container'></div>
+        <div style={{"height": "150vh"}}></div>
     </div>
 } 
 

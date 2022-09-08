@@ -1,5 +1,18 @@
 @use 'base'
 
+
+@keyframes animation-in
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0%)
+@keyframes animation-out
+  from
+    transform: translateY(0%)
+  to
+    transform: translateY(-100%)
+  
+
 .Game
   display: flex
   flex-direction: column
@@ -8,6 +21,11 @@
   background-color: #22252c
   height: 150vh
   width: 100%
+  position: absolute
+  top: 0
+  animation: animation-in 1.5s ease-out
+.Game-out
+  animation: animation-out 1.5s ease-in
 
 .Game_container-buttons
   position: absolute

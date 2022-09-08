@@ -4,10 +4,11 @@
     background-color: base.$white
     display: flex
     flex-direction: column
+    background-color: #22252c 
 
 .Home__header
     padding: 0
-    position: relative
+    position: absolute
     display: flex
     flex-direction: column
     align-items: center
@@ -59,8 +60,6 @@
     top:90vh
     animation: right-line 18s ease-in-out infinite
     transform: translateX(-100%)
-
-
 
 
 
@@ -144,3 +143,18 @@
 .Home__button:hover
     background-color: base.$main-color
     color: base.$almost-white
+
+
+.space
+    position: relative
+    height: 100vh
+    background-color: #22252c 
+
+.header-out
+    transform: translateY(-100%)
+    animation: header-out 1.5s ease-in
+@keyframes header-out
+  from
+    transform: translateY(0%)
+  to
+    transform: translateY(-100%)

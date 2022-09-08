@@ -106,11 +106,18 @@ function Game(props){
         }
     }
 
+    const handleResetClicked = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth'})
+        const elem= document.getElementById('game')
+        elem.classList.add('Game-out')
+        setTimeout(() => props.onResetClicked(), 1500)     
+    }
+
     return <>
-        <div className='Game'>
+        <div id='game' className='Game'>
             <div className='Game_container-buttons'>
                 <button className='Game_button' onClick={() => props.onBackClicked()}>Back</button>
-                <button className='Game_button' onClick={() => props.onResetClicked()}>Reset</button>
+                <button className='Game_button' onClick={handleResetClicked}>Reset</button>
             </div>
 
             <div className='Game_arrow'/>
