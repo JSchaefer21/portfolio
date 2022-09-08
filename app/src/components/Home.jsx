@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import Projects from './Projects.jsx'
+import About from './About.jsx'
 import Footer from './Footer.jsx'
 import '../styles/Home.sass'
 import '../styles/MenuBar.sass'
 
 function Home(props){
 
+    const [view, setView] = useState('projects')
     const [menu, setMenu] = useState(false)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -27,10 +29,14 @@ function Home(props){
     }
 
     const handleProjectsClick = () => {
-        
+        handleMenuClick()
+        window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth'})
+        setView('projects')
     }
     const handleAboutClick = () => {
-
+        handleMenuClick()
+        window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth'})
+        setView('about')
     }
     const handleContactClick = () => {
         handleMenuClick()
@@ -74,7 +80,8 @@ function Home(props){
             </ul> }
         </div>
 
-        <Projects/>
+        {view === 'projects' && <Projects/>}
+        {view === 'about' && <About/>}
         <Footer/>
     </div>
 } 
