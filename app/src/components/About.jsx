@@ -1,15 +1,8 @@
-import { useState } from 'react'
 import '../styles/About.sass'
 
-function Projects(){
+function About(){
 
-    const [hover, setHover] = useState(false)
-
-    const handleMoreClick = () =>{
-        if(!hover) setHover(true)
-        else setHover(false)
-    }
-  
+ 
     return <div className='About mw' >
 
         <h1 className='About_title'>ABOUT ME</h1>
@@ -26,4 +19,4 @@ function Projects(){
     </div>
 } 
 
-export default Projects
+export default About
