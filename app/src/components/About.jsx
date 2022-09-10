@@ -12,7 +12,7 @@ function About(){
                 eager to start a new challenge in the development world and improve my knowledge. </p>
             <p>I acquired the first basics of programming mainly in C++ across the Degree and 
                 during the last months I have trained in some of the most common languages such 
-                as javascript and ReactJS among others.</p>
+                as javascript and ReactJS among others. </p>
         </div>
 
    
