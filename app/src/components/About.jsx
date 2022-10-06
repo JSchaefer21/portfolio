@@ -50,10 +50,8 @@ function About(){
 
             <div className='Container Container-right'>
                 <p className='Container_title'>Automotive experience as quality testing engineer</p>
-                <AwesomeSlider bullets={false}>
-                    <div data-src={require("./asset/bultaco.jpg")}/>
-                    <div data-src={require("./asset/moto.png")}/>
-                </AwesomeSlider>
+                <iframe width="100%" height='260px' src="https://www.youtube.com/embed/iS7Cr3piWSQ" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p className='Container_description'>Almost five years working in the management and performance of functional, durable and fatigue test 
                 for SEAT and AUDI projects. Inside of multiple departments with cockpit, console, interior, trunk and bumper parts.
                 Constantly searching for solutions and optimizations of parts to achieve the high requirements of the company.</p>
