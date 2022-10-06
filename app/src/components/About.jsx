@@ -16,47 +16,81 @@ function About(){
 
         <div className='About_container'>
 
-            {/* <div className='circle-up'/>
-            <div className='line'/> */}
-            
+            <div className='circle-up'/>
+            <div className='line'/>
 
             <div className='Container Container-left'>
-                <p className='Container_title'>Mountainbike cyclist</p>
-                <AwesomeSlider animation='fallAnimation' bullets={false}>
+                <p className='Container_title'>MTB Rider</p>
+                <AwesomeSlider className="Foto" animation='fallAnimation' bullets={false}>
                     <div data-src={require("./asset/moto.png")}/>
                     <div data-src={require("./asset/bultaco.jpg")}/>
                 </AwesomeSlider>
-                <p className='Container_description'>Riding mountabike and downhill, running races since child</p>
+                <p className='Container_description'>Riding mtb (downhill and enduro) since child! cycling is my favourite sport, I even practice trial for a while and participate in some downhill races during a couple of years.</p>
+            </div>
+
+            <div className='Container Container-right'>
+                <p className='Container_title'>Electronic Engineer</p>
+                <AwesomeSlider bullets={false}>
+                    <div data-src={require("./asset/bultaco.jpg")}/>
+                    <div data-src={require("./asset/moto.png")}/>
+                </AwesomeSlider>
+                <p className='Container_description'>Final project: Design and program an Audio board for Arduino DUE capable of processing high resolution audio data (24bits, 48Khz) in real time.</p>
             </div>
 
             <div className='Container Container-left'>
                 <p className='Container_title'>Pasionate about classics</p>
                 <AwesomeSlider bullets={false}>
-                    <div data-src={require("./asset/moto.png")}/>
                     <div data-src={require("./asset/bultaco.jpg")}/>
+                    <div data-src={require("./asset/moto.png")}/>
                 </AwesomeSlider>
-                <p className='Container_description'>Maintaining my old mercedes, always in the familiy since 1979</p>
+                <p className='Container_description'>I have always liked classic vehicles, I like how they sound and 
+                the sensations of driving it as if I were in another time.
+                I'm a proud owner of a 1979 Mercedes that was always in the family, and some other classic bikes.</p>
+            </div>
+
+            <div className='Container Container-right'>
+                <p className='Container_title'>Automotive experience as quality testing engineer</p>
+                <AwesomeSlider bullets={false}>
+                    <div data-src={require("./asset/bultaco.jpg")}/>
+                    <div data-src={require("./asset/moto.png")}/>
+                </AwesomeSlider>
+                <p className='Container_description'>Almost five years working in the management and performance of functional, durable and fatigue test 
+                for SEAT and AUDI projects. Inside of multiple departments with cockpit, console, interior, trunk and bumper parts.
+                Constantly searching for solutions and optimizations of parts to achieve the high requirements of the company.</p>
             </div>
 
             <div className='Container Container-left'>
                 <p className='Container_title'>Mechanic as a hobby</p>
-                <div className='Container_foto'></div>
-                <p className='Container_description'>I like to restore classics and ride it as oldtimer</p>
+                <AwesomeSlider bullets={false}>
+                    <div data-src={require("./asset/moto.png")}/>
+                    <div data-src={require("./asset/bultaco.jpg")}/>
+                </AwesomeSlider>
+                <p className='Container_description'>I like to do the maintenance of the vehicles by myself, 
+                restore bikes and solve the issues in the most cheapest and intelligent way. knowing that your "old vehicles" 
+                are allways ready for a ride because of your own work is one of the best feelings.</p>
+            </div>
+
+            <div className='Container Container-right'>
+                <p className='Container_title'>Web developer bootcamp</p>
+                <AwesomeSlider bullets={false}>
+                    <div data-src={require("./asset/bultaco.jpg")}/>
+                    <div data-src={require("./asset/moto.png")}/>
+                </AwesomeSlider>
+                <p className='Container_description'>Final project: Web aplication and social media designed 
+                for register and share sport activities with data visualization in real time. You can find it in the projects section!</p>
             </div>
 
             <div className='Container Container-left'>
                 <p className='Container_title'>Mountain lover</p>
-                <div className='Container_foto'></div>
-                <p className='Container_description'>Always availevide for a hike, training hard to superate myself</p>
+                <AwesomeSlider bullets={false}>
+                    <div data-src={require("./asset/bultaco.jpg")}/>
+                    <div data-src={require("./asset/moto.png")}/>
+                </AwesomeSlider>
+                <p className='Container_description'>Always available for a walk, training hard to improve my marks and endurance. 
+                I love the sensation of peace and adventure that the mountains transmit.
+                A good plan to do: spend the night in the pyrenees, without tent, looking at the stars.</p>
             </div>
-
-
-            <div className='Container Container-right'>Electronic Engineer</div>
-            <div className='Container Container-right'>Automotive experience as quality testing engineer</div>
-            <div className='Container Container-right'>Web developer bootcamp</div>
-            
         </div>
-
    
     </div>
 } 

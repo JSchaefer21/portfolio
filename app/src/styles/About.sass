@@ -16,35 +16,30 @@
     color: base.$dark-color
     border-bottom: 3px solid base.$light-color
     padding-bottom: 0.4rem
-    margin-bottom: -2rem
+    margin-bottom: -1rem
 
 .About_container
+    display: flex
+    flex-direction: column
+    align-items: center
     width: 100%
 
 
 .circle-up
-
+    visibility: hidden
 .line
-    position: absolute
-    left: 50%
-    background-color: base.$light-color
-    width: 3px
-    height: 400px
+    visibility: hidden
 
 
 .Container
     padding: 1rem 3rem
 .Container-left
     text-align: right
-    //transform: translate(-50%, 0%)
 .Container-right
     text-align: left
-    //transform: translate(50%, 0%)
-.Container_foto
-
 .Container_title
-    font-size: 20px
-    font-weight: 500
+    font-size: 22px
+    font-weight: 600
     margin: 0.4rem
 .Container_description
     font-size: 16px
@@ -53,4 +48,42 @@
 
 
 
-@media screen and (max-width: 650px)
+@media screen and (min-width: 600px)
+    .About
+        padding-bottom: 9rem
+    .About_container
+        padding-top: 3rem
+    .Container
+        width: 40%
+        padding: 0rem 1.5rem
+        margin-bottom: -5rem
+    .Container-left
+        transform: translate(-50%, 0%)
+    .Container-right
+        transform: translate(50%, 0%)
+    .circle-up
+        visibility: visible
+        position: absolute
+        left: 50%
+        width: 15px
+        height: 15px
+        border-radius: 100%
+        background-color: base.$light-color
+        transform: translate(-50%, -100%)
+        margin-top: -1rem
+    .line
+        visibility: visible
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 0%)
+        background-color: base.$light-color
+        width: 3px
+        height: 2300px
+        margin-top: -1rem
+
+@media screen and (min-width: 1100px)
+    .Container
+        width: 35%
+        padding: 0rem 3rem
+    .line
+        height: 2500px
