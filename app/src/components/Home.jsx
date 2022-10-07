@@ -81,7 +81,7 @@ function Home(props){
         </div>
 
         {view === 'projects' && <Projects/>}
-        {view === 'about' && <About/>}
+        {view === 'about' && <About handleProjectsClick={handleProjectsClick}/>}
         <Footer/>
     </div>
 } 

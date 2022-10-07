@@ -36,21 +36,43 @@
 
 
 .Container
-    padding: 1rem 3rem
+    padding: 1rem 2rem
 .Container-left
     text-align: right
+    width: 60%
 .Container-right
     text-align: left
 .Container_title
-    font-size: 22px
+    font-size: 24px
     font-weight: 600
     margin: 0.6rem
 .Container_description
     font-size: 16px
     font-weight: 400
     margin: 0.5rem
+.des_bold
+    font-size: 18px
+    font-weight: 500
+.Foto
+    height: 5rem
+    margin: -6px
+    margin-top: -1rem
+.Logo
+    height: 4rem
+    margin-left: 2rem
+.Logo2
+    height: 3rem
+    margin-bottom: 0.4rem
+    margin-right: 2rem
 
 
+.aws
+    --slider-height-percentage: 50%
+    --organic-arrow-thickness: 4px
+    --organic-arrow-border-radius: 2px
+    --organic-arrow-height: 30px
+    --organic-arrow-color: #f7f7f7     
+    --loader-bar-height: 0px
 
 @media screen and (min-width: 600px)
     .About
@@ -58,13 +80,14 @@
     .About_container
         padding-top: 3rem
     .Container
-        width: 40%
         padding: 0rem 1.5rem
         margin-bottom: -8rem
     .Container-left
         transform: translate(-50%, 0%)
+        width: 30%
     .Container-right
         transform: translate(50%, 0%)
+        width: 40%
     .circle-up
         visibility: visible
         position: absolute
@@ -84,10 +107,16 @@
         width: 3px
         height: 2100px
         margin-top: -2rem
+    .aws
+        --slider-height-percentage: 62%
 
 @media screen and (min-width: 1300px)
     .Container
-        width: 30%
         padding: 0rem 2.5rem
+    .Container-left
+        width: 24%
+    .Container-right
+        width: 30%
     .line
         height: 2300px
+
