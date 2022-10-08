@@ -12,7 +12,7 @@
     visibility: hidden
 .Container-hobbies
     text-align: left
-    padding: 0.1rem 1.2rem
+    padding: 0.4rem 1.2rem
 .Container-hobbies-title
     display: flex
     flex-direction: column
@@ -27,7 +27,7 @@
     padding: 4px 8px
     cursor: pointer
     font-size: 14px
-    font-weight: 400
+    font-weight: 500
     color: base.$light-color
 .Hobbies_button:hover
     background-color: base.$main-color
@@ -44,4 +44,17 @@
         background-color: base.$main-color
         width: 3px
         top: 12em
-        bottom: 0
+        bottom: 2rem
+    .Hobbies 
+        padding-bottom: 2rem
+
+@media screen and (min-width: 1100px)
+    .Container-hobbies
+        width: 28vw
+        margin-right: 6vh
+    .Container-hobbies-title
+        margin: 0
+    .line-2
+        left: 32%
+        
+    

@@ -88,7 +88,10 @@ function About(props){
                 <div className='Container-right Solape-2'>
                     <p className='Title'>CS50 Introduction to Computer Science</p>
                     <p className='Text Text-small'>Harvard University · edX | February 2022</p> 
-                    <p className='Text Text-bold'>10 weeks of lessons and exercises</p> 
+                    <p className='Text Text-bold'>10 weeks of lessons and exercises </p> 
+                    <p className='Text'>This course teaches students how to think algorithmically and solve problems efficiently. </p>
+                    <p className='Text'>Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. </p> 
+                    <p className='Anchor'><a className='Anchor' href="https://cs50.harvard.edu/x/2022/">More about the course</a></p> 
                     <img className='Logo' src={require("./assets/c.png")}/>
                     <img className='Logo' src={require("./assets/python.png")}/>
                     <img className='Logo' src={require("./assets/sql.png")}/>
@@ -122,7 +125,7 @@ function About(props){
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
                 <div className='Container-right Container-last'>
-                    <p className='Text Text-big Text-bold'>I'm now READY to WORK with you</p> 
+                    <p className='Text Text-big Text-bold'>I'm now READY to WORK with you! 👨‍💻</p> 
                 </div>
             </AnimatedOnScroll>
 
