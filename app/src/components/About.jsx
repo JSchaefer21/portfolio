@@ -13,10 +13,10 @@ function About(props){
             <div className='circle-up'/>
             <div className='line'/>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
                     <p className='Title Title-small'>HI! 👋 I'm Jordi</p>
-                    <p className='Text Text-bold'>From Barcelona, Spain</p>
+                    <p className='Text Text-bold'>From Barcelona, Spain </p>
                     <p className='Text'>Here you will find more about me</p>
                     <p className='Text Text-bold'>This is like a CV in a more interactive way</p>
                     <p className='Text'>My studies, hobbies, passions, work experience, etc.</p>
@@ -24,7 +24,7 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200">
                 <div className='Container-right Solape'>
                     <p className='Title'>Degree in Electronics Engineering</p>
                     <img className='Logo-school' src={require("./assets/upc.png")}/>
@@ -36,15 +36,15 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
                     <p className='Text Text-bold'>This was my first contact with programming languages in multiple subjects</p>
-                    <p className='Text'>After graduate I decided to go to germany, start working in the automotive industry</p>
+                    <p className='Text'>After graduate I decided to go to germany, start working in the automotive industry 🚗</p>
                     <p className='Text Text-bold'>And improve my German skills</p>
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">           
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200">           
                 <div className='Container-right Solape'>
                     <p className='Title'>Technical support at BMW</p>
                     <p className='Text Text-small'>EDAG Engineering | July 2016 – May 2017 | Munich (Germany)</p>
@@ -52,7 +52,7 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left Container-language'>
                     <p className='Title Title-small'>Languages</p>
                     <p className='Text'>Spanish · native</p>
@@ -61,13 +61,13 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
             
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
-                    <p className='Text Text-bold'>Then I come back to Barcelona and I take a good oportunity to continues working in automotive</p>
+                    <p className='Text Text-bold'>Then I come back to Barcelona and I took a good opportunity to continue working in automotive industry</p>
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">           
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200">           
                 <div className='Container-right Solape'>
                     <p className='Title'>SEAT quality testing engineer</p>
                     <p className='Text Text-small'>Ferchau Engineering | Jun 2017 – November 2021</p>
@@ -78,40 +78,41 @@ function About(props){
                     <p className='Text'>Constantly searching for solutions and optimizations of parts to achieve the high requirements of the company.</p>                </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
-                    <p className='Text Text-bold'>Here is where I decided to redirect my career to one of my passions i start with some intensive online course</p>
+                    <p className='Text Text-bold'>Here is where I decided to redirect my career to one of my passions, and I started with a intensive online course</p>
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200"> 
                 <div className='Container-right Solape-2'>
                     <p className='Title'>CS50 Introduction to Computer Science</p>
                     <p className='Text Text-small'>Harvard University · edX | February 2022</p> 
                     <p className='Text Text-bold'>10 weeks of lessons and exercises </p> 
                     <p className='Text'>"This course teaches students how to think algorithmically and solve problems efficiently."</p>
                     <p className='Text'>Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. </p> 
-                    <p className='Anchor'><a className='Anchor' href="https://cs50.harvard.edu/x/2022/">More about the course</a></p> 
+                    <p className='Anchor'><a className='Anchor' href="https://cs50.harvard.edu/x/2022/">More about the course</a>
+                    <a className='Anchor' href="https://github.com/JSchaefer21/CS50">Checkout my exercises</a></p>  
                     <img className='Logo' src={require("./assets/c.png")}/>
                     <img className='Logo' src={require("./assets/python.png")}/>
                     <img className='Logo' src={require("./assets/sql.png")}/>
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
+            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left '>
-                    <p className='Text Text-bold'>And then direct to a Bootcamp</p>
+                    <p className='Text Text-bold'>And then direct to a Bootcamp 💻</p>
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200"> 
                 <div className='Container-right Solape-2'>
                     <p className='Title'>Web Developer Bootcamp</p>
                     <p className='Text Text-small'>Neoland  |  April 2022 – Jun 2022</p> 
                     <p className='Text Text-bold'>More than 480h of programming lessons with a main focus on JavaScript and React</p> 
                     <p className='Text'>HTML, CSS, SASS, JavaScript, React, Node, Mongo, GIT</p> 
                     <p className='Text'>Knowledge of Frontend and Backend, API calls and database (everything implemented in my projects) with tests on each logical file, clean and reusable code, and TDD - agile methodologies.</p> 
-                    <p className='Text'>Implementing asynchronous functions; Callbacks, Promises, Async/Await. </p> 
+                    <p className='Text'>Implementing asynchronous functions: Callbacks, Promises, Async/Await. </p> 
                     <img className='Logo' src={require("./assets/react.png")}/>
                     <img className='Logo' src={require("./assets/node.png")}/>
                     <img className='Logo' src={require("./assets/mongo.png")}/>
@@ -124,9 +125,9 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200"> 
                 <div className='Container-right Container-last'>
-                    <p className='Text Text-big Text-bold'>I'm now READY to WORK with you! 👨‍💻</p> 
+                    <p className='Text Text-big Text-bold'>I'm now READY to work with you! 👨‍💻</p> 
                 </div>
             </AnimatedOnScroll>
 

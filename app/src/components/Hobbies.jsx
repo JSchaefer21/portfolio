@@ -12,7 +12,7 @@ function Hobbies(){
  
     return <div className='Hobbies mw' >
 
-        <AnimatedOnScroll className='' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200"> 
+        <AnimatedOnScroll className='' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200"> 
             <div className='Container-hobbies Container-hobbies-title'>
                 <p className='Text'>Want to know more about me?</p>
                 <button className='Hobbies_button' onClick={()=> setView(!view)}>My Hobbies</button>
@@ -22,7 +22,7 @@ function Hobbies(){
         {view === true && <div className='Center'>
         <div className='line-2'/>
 
-        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='300' animationInDuration="1200">
             <div className='Container-hobbies'>
                 <p className='Title Title-small'>MTB Rider</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
@@ -32,11 +32,11 @@ function Hobbies(){
                     <div data-src={require("./assets/bike_4.jpg")}/>
                     <div data-src={require("./assets/bike_5.jpg")}/>
                 </AwesomeSlider>
-                <p className='Text'>Riding mtb (downhill and enduro) since child! cycling is my favourite sport, I even practice trial for a while and participate in some downhill races during a couple of years.</p>
+                <p className='Text'>Riding mtb (downhill and enduro) since child! Cycling is my favorite sport, I even do trials for a while and participate in some downhill races for a couple of years.</p>
             </div>
         </AnimatedOnScroll>
 
-        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='300' animationInDuration="1200">
             <div className='Container-hobbies'>
                 <p className='Title Title-small'>Pasionate about classics</p>
                 <AwesomeSlider className='aws' animation='fallAnimation' bullets={false}>
@@ -45,13 +45,13 @@ function Hobbies(){
                     <div data-src={require("./assets/mercedes_3.jpg")}/>
                     <div data-src={require("./assets/mercedes_4.jpg")}/>
                 </AwesomeSlider>
-                <p className='Text'>I have always liked classic vehicles, I like how they sound and 
+                <p className='Text'>I've always liked classic vehicles, I like the way they sound and 
                 the sensations of driving it as if I were in another time.
-                I'm a proud owner of a 1979 Mercedes that was always in the family, and some other classic bikes.</p>
+                I'm a proud owner of a 1979 Mercedes that has always been in the family, and some other classic bikes.</p>
             </div>
         </AnimatedOnScroll>
 
-        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='300' animationInDuration="1200">
             <div className='Container-hobbies'>
                 <p className='Title Title-small'>Mountain lover</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
@@ -59,7 +59,7 @@ function Hobbies(){
                 </AwesomeSlider>
                 <p className='Text'>Always available for a walk, training hard to improve my marks and endurance. 
                 I love the sensation of peace and adventure that the mountains transmit.
-                Spend the night in the pyrenees, without tent, looking at the stars is a good plan to do</p>
+                Spend the night in the pyrenees, without tent, looking at the stars, is a good plan to do.</p>
             </div>
         </AnimatedOnScroll>
         </div>}
