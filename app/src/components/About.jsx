@@ -89,7 +89,7 @@ function About(props){
                     <p className='Title'>CS50 Introduction to Computer Science</p>
                     <p className='Text Text-small'>Harvard University · edX | February 2022</p> 
                     <p className='Text Text-bold'>10 weeks of lessons and exercises </p> 
-                    <p className='Text'>This course teaches students how to think algorithmically and solve problems efficiently. </p>
+                    <p className='Text'>"This course teaches students how to think algorithmically and solve problems efficiently."</p>
                     <p className='Text'>Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. </p> 
                     <p className='Anchor'><a className='Anchor' href="https://cs50.harvard.edu/x/2022/">More about the course</a></p> 
                     <img className='Logo' src={require("./assets/c.png")}/>
@@ -111,6 +111,7 @@ function About(props){
                     <p className='Text Text-bold'>More than 480h of programming lessons with a main focus on JavaScript and React</p> 
                     <p className='Text'>HTML, CSS, SASS, JavaScript, React, Node, Mongo, GIT</p> 
                     <p className='Text'>Knowledge of Frontend and Backend, API calls and database (everything implemented in my projects) with tests on each logical file, clean and reusable code, and TDD - agile methodologies.</p> 
+                    <p className='Text'>Implementing asynchronous functions; Callbacks, Promises, Async/Await. </p> 
                     <img className='Logo' src={require("./assets/react.png")}/>
                     <img className='Logo' src={require("./assets/node.png")}/>
                     <img className='Logo' src={require("./assets/mongo.png")}/>
