@@ -6,7 +6,7 @@
     align-items: center
     justify-content: center
     padding-top: 4rem
-    padding-bottom: 5rem
+    padding-bottom: 1rem
     background-color: base.$almost-white
     gap: 6rem
 
@@ -104,22 +104,10 @@
     background-color: base.$main-color
     color: base.$almost-white
 
-.Hobbies_button
-    border: 2px solid base.$main-color
-    background-color: base.$almost-white
-    border-radius: 8px
-    padding: 4px 8px
-    cursor: pointer
-    font-size: 16px
-    font-weight: 500
-    color: base.$light-color
-.Hobbies_button:hover
-    background-color: base.$main-color
-    color: base.$almost-white
-
+@media screen and (min-width: 500px)
+    .aws
+        --slider-height-percentage: 60%
 @media screen and (min-width: 650px)
-    .About
-        padding-bottom: 4rem
     .About_container
         padding-top: 3rem
         align-items: flex-start
@@ -127,14 +115,21 @@
         padding: 1rem 1rem 1rem 0
         margin-left: 4vw
         width: calc(34vw - 1rem)
-        // modificar solape
-        margin-bottom: 0rem
     .Container-right
         width: 50vw
         margin-left: 38vw
     .Container-right-2
         width: 50vw
         margin-left: 38vw
+        margin-top: 2rem
+    .Solape    
+        //modificar solape
+        margin-top: -4rem
+        margin-bottom: -4rem
+    .Solape-2    
+        //modificar solape
+        margin-top: -2rem
+        margin-bottom: -2rem
     .Container-language
         padding: 0.4rem 0
         margin-left: 4vw
@@ -149,7 +144,7 @@
         border-radius: 100%
         background-color: base.$light-color
         transform: translate(-50%, -100%)
-        margin-top: -2rem
+        margin-top: -1rem
     .line
         visibility: visible
         position: absolute
@@ -157,10 +152,8 @@
         transform: translate(-50%, 0%)
         background-color: base.$light-color
         width: 3px
-        height: 400vh
-        margin-top: -2rem
-    .aws
-        --slider-height-percentage: 62%
+        height: 335vh
+        margin-top: -1rem
 
 @media screen and (min-width: 1100px)
     .Container

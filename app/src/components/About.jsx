@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {AnimatedOnScroll} from "react-animated-css-onscroll"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
@@ -6,8 +5,6 @@ import '../styles/About.sass'
 import Hobbies from "./Hobbies"
 
 function About(props){
- 
-    const [view, setView] = useState(false)
 
     return <div className='About mw' >
         <h1 className='About_title'>ABOUT ME</h1>
@@ -28,7 +25,7 @@ function About(props){
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
-                <div className='Container-right'>
+                <div className='Container-right Solape'>
                     <p className='Title'>Degree in Electronics Engineering</p>
                     <img className='Logo-school' src={require("./assets/upc.png")}/>
                     <AwesomeSlider className='aws' bullets={false}>
@@ -48,7 +45,7 @@ function About(props){
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">           
-                <div className='Container-right'>
+                <div className='Container-right Solape'>
                     <p className='Title'>Technical support at BMW</p>
                     <p className='Text Text-small'>EDAG Engineering | July 2016 – May 2017 | Munich (Germany)</p>
                     <p className='Text'>Management, calibration and maintance of sensors, cables and electronic components for development testing cars.</p>
@@ -71,7 +68,7 @@ function About(props){
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">           
-                <div className='Container-right'>
+                <div className='Container-right Solape'>
                     <p className='Title'>SEAT quality testing engineer</p>
                     <p className='Text Text-small'>Ferchau Engineering | Jun 2017 – November 2021</p>
                     <p className='Text'>More than four years working in the management and performance of functional, durable and fatigue test 
@@ -88,7 +85,7 @@ function About(props){
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
-                <div className='Container-right'>
+                <div className='Container-right Solape-2'>
                     <p className='Title'>CS50 Introduction to Computer Science</p>
                     <p className='Text Text-small'>Harvard University · edX | February 2022</p> 
                     <p className='Text Text-bold'>10 weeks of lessons and exercises</p> 
@@ -99,13 +96,13 @@ function About(props){
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
-                <div className='Container-left'>
+                <div className='Container-left '>
                     <p className='Text Text-bold'>And then direct to a Bootcamp</p>
                 </div>
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
-                <div className='Container-right'>
+                <div className='Container-right Solape-2'>
                     <p className='Title'>Web Developer Bootcamp</p>
                     <p className='Text Text-small'>Neoland  |  April 2022 – Jun 2022</p> 
                     <p className='Text Text-bold'>More than 480h of programming lessons with a main focus on JavaScript and React</p> 
@@ -129,14 +126,7 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
-                <div className='Container-right Center'>
-                    <p className='Text'>Want to know more about me?</p>
-                    <button className='Hobbies_button' onClick={()=> setView(!view)}>My Hobbies</button>
-                </div>
-            </AnimatedOnScroll>
-
-            {view === true && <Hobbies/>}
+            <Hobbies/>
         </div>
     </div>
 } 

@@ -1,16 +1,29 @@
+import { useState } from 'react'
 import {AnimatedOnScroll} from "react-animated-css-onscroll"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
 import 'react-awesome-slider/dist/custom-animations/open-animation.css'
-import '../styles/About.sass'
+import '../styles/Hobbies.sass'
 
 function Hobbies(){
+     
+    const [view, setView] = useState(false)
  
-    return <div className='mw' >
+    return <div className='Hobbies mw' >
+
+        <AnimatedOnScroll className='' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
+            <div className='Container-hobbies Container-hobbies-title'>
+                <p className='Text'>Want to know more about me?</p>
+                <button className='Hobbies_button' onClick={()=> setView(!view)}>My Hobbies</button>
+            </div>
+        </AnimatedOnScroll>
+
+        {view === true && <div className='Center'>
+        <div className='line-2'/>
 
         <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
-            <div className='Container Container-right'>
+            <div className='Container-hobbies'>
                 <p className='Title Title-small'>MTB Rider</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
                     <div data-src={require("./assets/bike_1.jpg")}/>
@@ -24,7 +37,7 @@ function Hobbies(){
         </AnimatedOnScroll>
 
         <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
-            <div className='Container Container-right'>
+            <div className='Container-hobbies'>
                 <p className='Title Title-small'>Pasionate about classics</p>
                 <AwesomeSlider className='aws' animation='fallAnimation' bullets={false}>
                     <div data-src={require("./assets/mercedes_1.jpg")}/>
@@ -39,7 +52,7 @@ function Hobbies(){
         </AnimatedOnScroll>
 
         <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
-            <div className='Container Container-right'>
+            <div className='Container-hobbies'>
                 <p className='Title Title-small'>Mountain lover</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
                     <div data-src={require("./assets/mountain_1.jpg")}/>
@@ -49,6 +62,7 @@ function Hobbies(){
                 Spend the night in the pyrenees, without tent, looking at the stars is a good plan to do</p>
             </div>
         </AnimatedOnScroll>
+        </div>}
 
     </div>
 } 

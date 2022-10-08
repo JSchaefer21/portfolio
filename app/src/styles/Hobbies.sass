@@ -1,0 +1,46 @@
+@use 'base'
+
+.Hobbies
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 2  
+    background-color: base.$almost-white  
+    padding-bottom: 0rem
+.line-2
+    visibility: hidden
+.Container-hobbies
+    text-align: left
+    padding: 0.1rem 1.2rem
+.Container-hobbies-title
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 4rem 1.2rem 1rem 1.2rem
+
+    
+.Hobbies_button
+    border: 2px solid base.$main-color
+    background-color: base.$almost-white
+    border-radius: 8px
+    padding: 4px 8px
+    cursor: pointer
+    font-size: 14px
+    font-weight: 400
+    color: base.$light-color
+.Hobbies_button:hover
+    background-color: base.$main-color
+    color: base.$almost-white
+
+@media screen and (min-width: 650px)
+    .Container-hobbies
+        width: 50vw
+    .line-2
+        visibility: visible
+        position: absolute
+        left: 22%
+        transform: translate(-50%, 0%)
+        background-color: base.$main-color
+        width: 3px
+        height: 130%
+        margin-top: 0rem
