@@ -38,9 +38,9 @@ function About(props){
 
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
-                    <p className='Text Text-bold'>This was my first contact with programming languages in multiple subjects</p>
-                    <p className='Text'>After graduate I decided to go to germany, start working in the automotive industry 🚗</p>
-                    <p className='Text Text-bold'>And improve my German skills</p>
+                    <p className='Text Text-bold'>This is where I first learnt to program.</p>
+                    <p className='Text'>After graduating, I decided to go to Germany, to start working in the automotive industry 🚗</p>
+                    <p className='Text Text-bold'>And to improve my German skills</p>
                 </div>
             </AnimatedOnScroll>
 
@@ -48,22 +48,24 @@ function About(props){
                 <div className='Container-right Solape'>
                     <p className='Title'>Technical support at BMW</p>
                     <p className='Text Text-small'>EDAG Engineering | July 2016 – May 2017 | Munich (Germany)</p>
-                    <p className='Text'>Management, calibration and maintance of sensors, cables and electronic components for development testing cars.</p>
+                    <p className='Text'>Management, calibration and maintenance of sensors, cables and electronic components for the development testing cars.</p>
                 </div>
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
-                <div className='Container-left Container-language'>
-                    <p className='Title Title-small'>Languages</p>
-                    <p className='Text'>Spanish · native</p>
-                    <p className='Text'>English · intermediate</p>
-                    <p className='Text'>German · intermediate</p>
+                <div className='Container-left'>
+                    <div className='Container-language'>
+                        <p className='Title Title-small'>Languages</p>
+                        <p className='Text'>Spanish · native</p>
+                        <p className='Text'>English · intermediate</p>
+                        <p className='Text'>German · intermediate</p>
+                    </div>
                 </div>
             </AnimatedOnScroll>
             
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
-                    <p className='Text Text-bold'>Then I come back to Barcelona and I took a good opportunity to continue working in automotive industry</p>
+                    <p className='Text Text-bold'>Then I came back to Barcelona to take advantage of a good opportunity to continue working in the automotive industry</p>
                 </div>
             </AnimatedOnScroll>
 
@@ -91,8 +93,8 @@ function About(props){
                     <p className='Text Text-bold'>10 weeks of lessons and exercises </p> 
                     <p className='Text'>"This course teaches students how to think algorithmically and solve problems efficiently."</p>
                     <p className='Text'>Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. </p> 
-                    <p className='Anchor'><a className='Anchor' href="https://cs50.harvard.edu/x/2022/">More about the course</a>
-                    <a className='Anchor' href="https://github.com/JSchaefer21/CS50">Checkout my exercises</a></p>  
+                    <p className='Anchor'><a className='Anchor' href="https://cs50.harvard.edu/x/2022/" target="_blank" rel="noreferrer">More about the course</a>
+                    <a className='Anchor' href="https://github.com/JSchaefer21/CS50" target="_blank" rel="noreferrer">Checkout my exercises</a></p>  
                     <img className='Logo' src={require("./assets/c.png")}/>
                     <img className='Logo' src={require("./assets/python.png")}/>
                     <img className='Logo' src={require("./assets/sql.png")}/>
