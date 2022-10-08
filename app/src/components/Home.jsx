@@ -29,17 +29,17 @@ function Home(props){
     }
 
     const handleProjectsClick = () => {
-        handleMenuClick()
+        setMenu(false)
         window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth'})
         setView('projects')
     }
     const handleAboutClick = () => {
-        handleMenuClick()
+        setMenu(false)
         window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth'})
         setView('about')
     }
     const handleContactClick = () => {
-        handleMenuClick()
+        setMenu(false)
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth'})
     }
 

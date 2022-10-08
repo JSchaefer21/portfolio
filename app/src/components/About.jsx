@@ -7,7 +7,7 @@ import Hobbies from "./Hobbies"
 
 function About(props){
  
-    const [view, setView] = useState(null)
+    const [view, setView] = useState(false)
 
     return <div className='About mw' >
         <h1 className='About_title'>ABOUT ME</h1>
@@ -83,7 +83,7 @@ function About(props){
 
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
                 <div className='Container-left'>
-                    <p className='Text Text-bold'>Here is where I decided to redirect my career to one of my passions i start with some online intensive-course</p>
+                    <p className='Text Text-bold'>Here is where I decided to redirect my career to one of my passions i start with some intensive online course</p>
                 </div>
             </AnimatedOnScroll>
 
@@ -118,9 +118,6 @@ function About(props){
                     <p className='Text'><b className='Text-bold'>Final project: </b>Web aplication and social media designed 
                     for register and share sport activities with data visualization in real time. You can find it in the projects section!</p>
                 </div>
-            </AnimatedOnScroll>
-
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
                 <div className='Container-right-2'>
                     <button className='Projects_button' onClick={()=>props.handleProjectsClick()}>Go to Projects</button> 
                 </div>
@@ -132,14 +129,14 @@ function About(props){
                 </div>
             </AnimatedOnScroll>
 
-            <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200"> 
-                <div className='Container-left Center'>
+            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
+                <div className='Container-right Center'>
                     <p className='Text'>Want to know more about me?</p>
-                    <button className='Hobbies_button' onClick={()=> setView('Hobbies')}>My Hobbies</button>
+                    <button className='Hobbies_button' onClick={()=> setView(!view)}>My Hobbies</button>
                 </div>
             </AnimatedOnScroll>
 
-            {view === 'Hobbies' && <Hobbies/>}
+            {view === true && <Hobbies/>}
         </div>
     </div>
 } 

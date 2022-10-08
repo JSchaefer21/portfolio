@@ -33,7 +33,6 @@
     visibility: hidden
 
 
-
 .Container-left
     text-align: center
     padding: 1.5rem 2.5rem
@@ -47,7 +46,7 @@
 .Container-language
     background-color: #e0e0e7
     color: black
-    border-radius: 1.5rem
+    border-radius: 1.2rem
     padding: 0.8rem 1.5rem
     margin: 1.5rem 0rem
 .Title
@@ -118,25 +117,33 @@
     background-color: base.$main-color
     color: base.$almost-white
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 650px)
     .About
-        padding-bottom: 13rem
+        padding-bottom: 4rem
     .About_container
         padding-top: 3rem
-    .Container
-        padding: 0rem 1.5rem
+        align-items: flex-start
+    .Container-left
+        padding: 1rem 1rem 1rem 0
+        margin-left: 4vw
+        width: calc(34vw - 1rem)
         // modificar solape
         margin-bottom: 0rem
-    .Container-left
-        transform: translate(-80%, 0%)
-        width: 30%
     .Container-right
-        transform: translate(30%, 0%)
-        width: 40%
+        width: 50vw
+        margin-left: 38vw
+    .Container-right-2
+        width: 50vw
+        margin-left: 38vw
+    .Container-language
+        padding: 0.4rem 0
+        margin-left: 4vw
+    .Text-big
+        text-align: center
     .circle-up
         visibility: visible
         position: absolute
-        left: 40%
+        left: 38%
         width: 15px
         height: 15px
         border-radius: 100%
@@ -146,16 +153,16 @@
     .line
         visibility: visible
         position: absolute
-        left: 40%
+        left: 38%
         transform: translate(-50%, 0%)
         background-color: base.$light-color
         width: 3px
-        height: 2100px
+        height: 400vh
         margin-top: -2rem
     .aws
         --slider-height-percentage: 62%
 
-@media screen and (min-width: 1300px)
+@media screen and (min-width: 1100px)
     .Container
         padding: 0rem 2.5rem
     .Container-left

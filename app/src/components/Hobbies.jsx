@@ -9,7 +9,7 @@ function Hobbies(){
  
     return <div className='mw' >
 
-        <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
             <div className='Container Container-right'>
                 <p className='Title Title-small'>MTB Rider</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
@@ -23,7 +23,7 @@ function Hobbies(){
             </div>
         </AnimatedOnScroll>
 
-        <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
             <div className='Container Container-right'>
                 <p className='Title Title-small'>Pasionate about classics</p>
                 <AwesomeSlider className='aws' animation='fallAnimation' bullets={false}>
@@ -38,7 +38,7 @@ function Hobbies(){
             </div>
         </AnimatedOnScroll>
 
-        <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
+        <AnimatedOnScroll className='mw' animationIn="slideInRight" screenOffset='350' animationInDuration="1200">
             <div className='Container Container-right'>
                 <p className='Title Title-small'>Mountain lover</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
@@ -46,7 +46,7 @@ function Hobbies(){
                 </AwesomeSlider>
                 <p className='Text'>Always available for a walk, training hard to improve my marks and endurance. 
                 I love the sensation of peace and adventure that the mountains transmit.
-                A good plan to do: spend the night in the pyrenees, without tent, looking at the stars.</p>
+                Spend the night in the pyrenees, without tent, looking at the stars is a good plan to do</p>
             </div>
         </AnimatedOnScroll>
 
