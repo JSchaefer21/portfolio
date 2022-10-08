@@ -27,43 +27,59 @@
     display: flex
     flex-direction: column
     align-items: center
-    width: 100%
-
 .circle-up
     visibility: hidden
 .line
     visibility: hidden
 
 
-.Container
-    padding: 1rem 2rem
+
 .Container-left
-    text-align: right
-    width: 60%
+    text-align: center
+    padding: 1.5rem 2.5rem
+    color: base.$light-color
 .Container-right
     text-align: left
-.Container_title
+    padding: 1rem 1.2rem
+.Container-right-2
+    text-align: center
+    padding: 0
+.Container-language
+    background-color: #e0e0e7
+    color: black
+    border-radius: 1.5rem
+    padding: 0.8rem 1.5rem
+    margin: 1.5rem 0rem
+.Title
     font-size: 24px
     font-weight: 600
-    margin: 0.6rem
-.Container_description
+    margin: 0.4rem
+.Title-small
+    font-size: 22px
+.Text
     font-size: 16px
     font-weight: 400
-    margin: 0.5rem
-.des_bold
+    margin: 0.6rem 0.4rem
+.Text-big
     font-size: 18px
+    margin: 1.8rem 0
+.Text-small
+    font-size: 12px
+    margin: -0.1rem 0.4rem
+    color: #535353
+.Text-bold
     font-weight: 500
-.Foto
-    height: 5rem
-    margin: -6px
-    margin-top: -1rem
+.Logo-school
+    height: 4.2rem
+    margin: -10px
+    margin-top: -0.8rem
 .Logo
-    height: 4rem
-    margin-left: 2rem
-.Logo2
-    height: 3rem
-    margin-bottom: 0.4rem
-    margin-right: 2rem
+    height: 2.5rem
+    margin: 0.4rem
+    margin-right: 1rem
+.Foto
+    width: 100%
+    height: auto
 
 
 .aws
@@ -74,6 +90,34 @@
     --organic-arrow-color: #f7f7f7     
     --loader-bar-height: 0px
 
+.Projects_button
+    border: none
+    border-bottom: 2px solid base.$main-color
+    background-color: base.$almost-white
+    padding: 0px 6px
+    margin: 0rem 0.5rem 
+    cursor: pointer
+    font-size: 18px
+    font-weight: 500
+    color: base.$light-color
+.Projects_button:hover
+    border-radius: 10px
+    background-color: base.$main-color
+    color: base.$almost-white
+
+.Hobbies_button
+    border: 2px solid base.$main-color
+    background-color: base.$almost-white
+    border-radius: 8px
+    padding: 4px 8px
+    cursor: pointer
+    font-size: 16px
+    font-weight: 500
+    color: base.$light-color
+.Hobbies_button:hover
+    background-color: base.$main-color
+    color: base.$almost-white
+
 @media screen and (min-width: 600px)
     .About
         padding-bottom: 13rem
@@ -81,17 +125,18 @@
         padding-top: 3rem
     .Container
         padding: 0rem 1.5rem
-        margin-bottom: -8rem
+        // modificar solape
+        margin-bottom: 0rem
     .Container-left
-        transform: translate(-50%, 0%)
+        transform: translate(-80%, 0%)
         width: 30%
     .Container-right
-        transform: translate(50%, 0%)
+        transform: translate(30%, 0%)
         width: 40%
     .circle-up
         visibility: visible
         position: absolute
-        left: 50%
+        left: 40%
         width: 15px
         height: 15px
         border-radius: 100%
@@ -101,7 +146,7 @@
     .line
         visibility: visible
         position: absolute
-        left: 50%
+        left: 40%
         transform: translate(-50%, 0%)
         background-color: base.$light-color
         width: 3px
@@ -114,9 +159,12 @@
     .Container
         padding: 0rem 2.5rem
     .Container-left
-        width: 24%
+        width: 20%
     .Container-right
         width: 30%
     .line
         height: 2300px
+        left: 42%
+    .circle-up
+        left: 42%
 
