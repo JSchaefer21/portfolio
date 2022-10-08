@@ -12,7 +12,7 @@ function Hobbies(){
  
     return <div className='Hobbies mw' >
 
-        <AnimatedOnScroll className='' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
+        <AnimatedOnScroll className='' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200"> 
             <div className='Container-hobbies Container-hobbies-title'>
                 <p className='Text'>Want to know more about me?</p>
                 <button className='Hobbies_button' onClick={()=> setView(!view)}>My Hobbies</button>

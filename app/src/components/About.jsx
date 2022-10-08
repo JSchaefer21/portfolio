@@ -121,7 +121,7 @@ function About(props){
             </AnimatedOnScroll>
 
             <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='350' animationInDuration="1200"> 
-                <div className='Container-right'>
+                <div className='Container-right Container-last'>
                     <p className='Text Text-big Text-bold'>I'm now READY to WORK with you</p> 
                 </div>
             </AnimatedOnScroll>
