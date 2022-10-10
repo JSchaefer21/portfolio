@@ -1,7 +1,7 @@
 import Formular from './Formular.jsx'
 import '../styles/Footer.sass'
 
-function Footer(){
+function Footer(props){
 
     return <footer className="Footer mw">
         
@@ -28,6 +28,8 @@ function Footer(){
                 <img className='Footer__icons-logo' src='../../linkedin_logo.png' alt=''/>
             </a>
         </div>
+
+        <button className='Footer__up-button' onClick={()=>props.onUpClicked()}></button>
 
     </footer>
 } 

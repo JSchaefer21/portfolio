@@ -42,6 +42,10 @@ function Home(props){
         setMenu(false)
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth'})
     }
+    const handleUpClick = () => {
+        setMenu(false)
+        window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth'})
+    }
 
     return <div className="Home">
 
@@ -82,7 +86,7 @@ function Home(props){
 
         {view === 'projects' && <Projects/>}
         {view === 'about' && <About handleProjectsClick={handleProjectsClick}/>}
-        <Footer/>
+        <Footer onUpClicked={handleUpClick}/>
     </div>
 } 
 
