@@ -12,6 +12,10 @@ function Hobbies(){
  
     return <div className='Hobbies mw' >
 
+        <div className='Container-hobbies Container-last'>
+            <p className='Text Text-big Text-bold'>I'm now READY to work with you! 👨‍💻</p> 
+        </div>
+
         <div className='Container-hobbies Container-hobbies-title'>
             <p className='Text'>Want to know more about me?</p>
             <button className='Hobbies_button' onClick={()=> setView(!view)}>My Hobbies</button>
@@ -30,7 +34,7 @@ function Hobbies(){
                     <div data-src={require("./assets/bike_4.jpg")}/>
                     <div data-src={require("./assets/bike_5.jpg")}/>
                 </AwesomeSlider>
-                <p className='Text'>Riding mtb (downhill and enduro) since child! Cycling is my favorite sport, I even do trials for a while and participate in some downhill races for a couple of years.</p>
+                <p className='Text'>I've been riding mtb (downhill and enduro) since I was a child! Cycling is my favorite sport, I even did trials for a while and participated in some downhill races for a couple of years.</p>
             </div>
         </AnimatedOnScroll>
 
@@ -43,9 +47,9 @@ function Hobbies(){
                     <div data-src={require("./assets/mercedes_3.jpg")}/>
                     <div data-src={require("./assets/mercedes_4.jpg")}/>
                 </AwesomeSlider>
-                <p className='Text'>I've always liked classic vehicles, I like the way they sound and 
-                the sensations of driving it as if I were in another time.
-                I'm a proud owner of a 1979 Mercedes that has always been in the family, and some other classic bikes.</p>
+                <p className='Text'>I've always liked classic vehicles. I like the way they sound and 
+                the sensation of driving it as if I were in another time.
+                I'm a proud owner of a 1979 Mercedes that has always been in the family and some classic bikes.</p>
             </div>
         </AnimatedOnScroll>
 
@@ -54,10 +58,12 @@ function Hobbies(){
                 <p className='Title Title-small'>Mountain lover</p>
                 <AwesomeSlider className='aws' animation='openAnimation' bullets={false}>
                     <div data-src={require("./assets/mountain_1.jpg")}/>
+                    <div data-src={require("./assets/mountain_2.jpg")}/>
+                    <div data-src={require("./assets/mountain_3.jpg")}/>
                 </AwesomeSlider>
-                <p className='Text'>Always available for a walk, training hard to improve my marks and endurance. 
-                I love the sensation of peace and adventure that the mountains transmit.
-                Spend the night in the pyrenees, without tent, looking at the stars, is a good plan to do.</p>
+                <p className='Text'>Always available for a hike, training hard to improve my marks and endurance. 
+                I love the sensation of peace and adventure that the mountains bring.
+                Spending the night in the pyrenees, without tent, looking at the stars, is the best definition of a plan for me.</p>
             </div>
         </AnimatedOnScroll>
         </div>}
@@ -66,16 +72,3 @@ function Hobbies(){
 } 
 
 export default Hobbies
-
-
-
-{/*             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='350' animationInDuration="1200">
-                <div className='Container Container-left'>
-                    <p className='Container_title'>Mechanic as a hobby</p>
-                    <iframe width="100%" height="330" src="https://www.youtube.com/embed/4g8AQYztO6g" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p className='Container_description'>I like to do the maintenance of the vehicles by myself, 
-                    restore bikes and solve the issues in the most cheapest and intelligent way. knowing that your "old vehicles" 
-                    are always ready for a ride because of your own work is one of the best feelings.</p>
-                </div>
-            </AnimatedOnScroll> */}

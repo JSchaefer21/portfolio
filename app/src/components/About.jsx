@@ -82,7 +82,7 @@ function About(props){
 
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left'>
-                    <p className='Text Text-bold'>Here is where I decided to redirect my career to one of my passions, and I started with a intensive online course</p>
+                    <p className='Text Text-bold'>Here is when I decided to redirect my career and started working to one of my passions: programming. I began with an intensive online course</p>
                 </div>
             </AnimatedOnScroll>
 
@@ -103,7 +103,7 @@ function About(props){
 
             <AnimatedOnScroll className='Center' animationIn="slideInLeft" screenOffset='300' animationInDuration="1200">
                 <div className='Container-left '>
-                    <p className='Text Text-bold'>And then direct to a Bootcamp 💻</p>
+                    <p className='Text Text-bold'>And then, I went directly to a Bootcamp 💻</p>
                 </div>
             </AnimatedOnScroll>
 
@@ -119,17 +119,11 @@ function About(props){
                     <img className='Logo' src={require("./assets/node.png")}/>
                     <img className='Logo' src={require("./assets/mongo.png")}/>
                     <img className='Foto' src={require("./assets/bootcamp.jpg")}/>
-                    <p className='Text'><b className='Text-bold'>Final project: </b>Web aplication and social media designed 
-                    for register and share sport activities with data visualization in real time. You can find it in the projects section!</p>
+                    <p className='Text'><b className='Text-bold'>Final project: </b>Web aplication and social media for 
+                    registering and sharing sport activities with data visualization in real time. You can find it in the projects section!</p>
                 </div>
                 <div className='Container-right-2'>
                     <button className='Projects_button' onClick={()=>props.handleProjectsClick()}>Go to Projects</button> 
-                </div>
-            </AnimatedOnScroll>
-
-            <AnimatedOnScroll className='Center' animationIn="slideInRight" screenOffset='300' animationInDuration="1200"> 
-                <div className='Container-right Container-last'>
-                    <p className='Text Text-big Text-bold'>I'm now READY to work with you! 👨‍💻</p> 
                 </div>
             </AnimatedOnScroll>
 
