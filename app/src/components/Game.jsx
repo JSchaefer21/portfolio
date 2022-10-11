@@ -125,7 +125,7 @@ function Game(props){
 
             <div className='Game_arrow'/>
 
-            <div className='circle' style={{"left": `${pos}%`}}> </div>
+            <div className='circle' style={{"left": `${pos}%`}}/>
             <div className='line_top'/>
             <div className='line_bottom line_bottom-left'/>
             <div className='line_bottom line_bottom-right'/>

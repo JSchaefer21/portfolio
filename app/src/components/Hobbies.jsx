@@ -10,7 +10,7 @@ function Hobbies(){
      
     const [view, setView] = useState(false)
  
-    return <div className='Hobbies mw' >
+    return <div className='Hobbies mw'>
 
         <div className='Container-hobbies Container-last'>
             <p className='Text Text-big Text-bold'>I'm now READY to work with you! 👨‍💻</p> 
