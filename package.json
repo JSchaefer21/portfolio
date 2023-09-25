@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-awesome-slider": "^4.1.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "sass": "^1.68.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.5"
   }
