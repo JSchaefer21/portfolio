@@ -7,7 +7,7 @@ function Formular() {
 
   const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   const [message, setMessage] = useState<String | null>(null)
-  const form = useRef()
+  const form = useRef<HTMLFormElement | null>(null)
 
   const sendEmail = (e: any) => {
     e.preventDefault()
@@ -32,7 +32,7 @@ function Formular() {
       })
   }
 
-  return <form className='Formular' ref={form.current} onSubmit={sendEmail}>
+  return <form className='Formular' ref={form} onSubmit={sendEmail}>
     <h1 className='Formular__title'>CONTACT</h1>
 
     <input className='Formular__input' type='text' name='user_name' placeholder=' Name' />
