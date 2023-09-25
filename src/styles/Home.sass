@@ -4,7 +4,7 @@
     background-color: base.$white
     display: flex
     flex-direction: column
-    background-color: #22252c 
+    background-color: #22252c
 
 .Home__header
     padding: 0
@@ -19,8 +19,8 @@
     background-color: #22252c
     overflow: hidden
 
-.slide-lines 
-    position:absolute
+.slide-lines
+    position: absolute
     top: 0
     bottom: 0
     left: 0
@@ -33,36 +33,33 @@
     height: 1px
     width: 100%
 
-@keyframes right-line 
-  50% 
-    transform: translateX(0)
-  100% 
-    transform: translateX(100%)
+@keyframes right-line
+    50%
+        transform: translateX(0)
+    100%
+        transform: translateX(100%)
 @keyframes left-line
-  50% 
-    transform: translateX(0)
-  100% 
-    transform: translateX(-100%)
+    50%
+        transform: translateX(0)
+    100%
+        transform: translateX(-100%)
 
 .line1
-    top:80vh
+    top: 80vh
     animation: left-line 15s ease-in-out infinite
     transform: translate(100%)
 .line2
-    top:81vh
+    top: 81vh
     animation: right-line 17s ease-in-out infinite
     transform: translateX(-100%)
 .line3
-    top:84vh
+    top: 84vh
     animation: left-line 16s ease-in-out infinite
     transform: translate(100%)
 .line4
-    top:90vh
+    top: 90vh
     animation: right-line 18s ease-in-out infinite
     transform: translateX(-100%)
-
-
-
 
 .polygon
     display: inline-block
@@ -80,7 +77,6 @@
     width: 250px
     height: 250px
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)
-
 
 .Home__text-container
     display: flex
@@ -104,8 +100,6 @@
     color: base.$main-color
     text-align: center
 
-
-
 @media only screen and (min-width: 1000px)
     .Home__header
         flex-direction: row
@@ -115,15 +109,13 @@
     .Home__description
         margin-bottom: 0
     .line1
-        top:70vh
+        top: 70vh
     .line2
-        top:72vh
+        top: 72vh
     .line3
-        top:75vh
+        top: 75vh
     .line4
-        top:80vh
-
-
+        top: 80vh
 
 .Home__button
     position: absolute
@@ -144,17 +136,16 @@
     background-color: base.$main-color
     color: base.$almost-white
 
-
 .space
     position: relative
     height: 100vh
-    background-color: #22252c 
+    background-color: #22252c
 
 .header-out
     transform: translateY(-100%)
     animation: header-out 1.5s ease-in
 @keyframes header-out
-  from
-    transform: translateY(0%)
-  to
-    transform: translateY(-100%)
+    from
+        transform: translateY(0%)
+    to
+        transform: translateY(-100%)
