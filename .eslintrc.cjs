@@ -1,21 +1,35 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  settings: {
+    react: {
+      version: "detect",
     },
-    "extends": [
-        "standard-with-typescript",
-        "plugin:react/recommended"
-    ],
-    "overrides": [],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module",
-        "project": "./tsconfig.json"
+  },
+  plugins: ["react"],
+  extends: ["plugin:react/recommended", "standard", "prettier"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-    }
+    ecmaVersion: 2021,
+    sourceType: "module",
+  },
+  overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: [".eslintrc.{js,cjs}"],
+      parserOptions: {
+        sourceType: "script",
+      },
+    },
+  ],
+  rules: {
+    "react/react-in-jsx-scope": "off",
+    // "react/propt-types": "off",
+  },
 }
