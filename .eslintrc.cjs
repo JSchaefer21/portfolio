@@ -9,7 +9,8 @@ module.exports = {
     },
   },
   plugins: ["react"],
-  extends: ["plugin:react/recommended", "standard", "prettier"],
+  extends: ["plugin:react/recommended", "prettier"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -17,19 +18,10 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: "module",
   },
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: [".eslintrc.{js,cjs}"],
-      parserOptions: {
-        sourceType: "script",
-      },
-    },
-  ],
+  overrides: [],
   rules: {
     "react/react-in-jsx-scope": "off",
-    // "react/propt-types": "off",
+    "react/propt-types": "off",
+    "react/no-unescaped-entities": "off",
   },
 }
