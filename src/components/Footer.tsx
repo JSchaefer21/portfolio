@@ -7,7 +7,7 @@ type Props = {
 
 function Footer({ onUpClicked }: Props) {
   return (
-    <footer className="Footer  mr mw">
+    <footer className="Footer mw">
       <div className="Footer__cv mw">
         <div className="Footer__section color-cv"></div>
         <div className="Footer__cv-container">
