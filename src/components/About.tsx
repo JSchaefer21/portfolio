@@ -277,6 +277,43 @@ function About({ handleProjectsClick }: Props) {
           </div>
         </AnimationOnScroll>
 
+        <AnimationOnScroll
+          className="Center"
+          animateIn="animate__slideInRight"
+          offset={300}
+          duration={1}
+          animateOnce
+        >
+          <div className="Container-right Solape-2">
+            <p className="Text" style={{ margin: "2rem 0.5rem 2rem" }}>
+              Currently working as...
+            </p>
+            <p className="Title">Frontend Developer</p>
+            <p className="Text Text-small">Sia | September 2022 – Present</p>
+            <p className="Text">
+              Frontend web application development (React and Typescript) for
+              analysis of decentralized Web3 applications and IA.s chat
+              customization.
+            </p>
+            <p className="Text">
+              Converting all defined designs and functionalities into code.
+            </p>
+            <p className="Text Text-bold">
+              Context provider - Recharts - Reactflows - Material UI (MUI)
+            </p>
+            <p className="Text">
+              <a
+                className="Anchor"
+                href="https://www.sia.so/about"
+                target="_blank"
+                rel="noreferrer"
+              >
+                More about us and our project
+              </a>
+            </p>
+          </div>
+        </AnimationOnScroll>
+
         {/* <Hobbies /> */}
       </div>
     </div>
