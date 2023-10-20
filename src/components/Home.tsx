@@ -50,13 +50,9 @@ function Home(props: any) {
       <div className="space" />
 
       <header id="header" className="Home__header mw">
-        <div className="polygon">
-          <img
-            className="Home__foto-perfil"
-            src="../../foto_perfil.jpg"
-            alt=""
-          />
-        </div>
+        {/* <div className="polygon"> */}
+        <img className="Home__foto-perfil" src="../../foto_perfil.jpg" alt="" />
+        {/* </div> */}
 
         <div className="Home__text-container">
           <p className="Home__name"> Hello, I'm Jordi Schaefer </p>
