@@ -17,7 +17,7 @@ function Footer({ onUpClicked }: Props) {
             download="Jordi_Schaefer_CV.pdf"
           >
             Download CV
-            <p className="Footer__cv-description"> .pdf (83KB)</p>
+            <p className="Footer__cv-description"> .pdf (96KB)</p>
           </a>
         </div>
       </div>

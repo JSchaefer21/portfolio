@@ -88,7 +88,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="Project Project-2" style={{ display: "table-cell" }}>
+      {/* <div className="Project Project-2" style={{ display: "table-cell" }}>
         <div className="Project__container">
           <p className="Project__description">
             <b className="bold">Egg Timer</b>, web application that helps you
@@ -124,6 +124,44 @@ function Projects() {
             >
               See code
             </a>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="Project Project-2" style={{ display: "table-cell" }}>
+        <div className="Project__container">
+          <p className="Project__description">
+            <b className="bold">Macro calculator</b>, a web application designed
+            to help you calculate your daily macronutrient needs based on your
+            goals.
+          </p>
+          <p className="Project__description">
+            Whether you are aiming for <b className="bold">bulking</b> or{" "}
+            <b className="bold">cutting</b>, this app lets you customize your
+            macro ratios and caloric intake with precision.
+          </p>
+          <p className="Project__description">
+            You can adjust your protein, fat, and carb intake based on your body
+            weight, activity level, and personal preferences.
+          </p>
+          <p className="Project__description"></p>
+          <div className="Project__button-container">
+            <a
+              className="Project__button"
+              href="https://calcular-macros.vercel.app/macros"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit site
+            </a>
+            {/* <a
+              className="Project__button"
+              href="https://github.com/JSchaefer21/calcular-macros"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See code
+            </a> */}
           </div>
         </div>
       </div>

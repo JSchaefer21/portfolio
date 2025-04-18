@@ -82,9 +82,9 @@ function Home(props: any) {
             <li className="items" onClick={handleProjectsClick}>
               Projects
             </li>
-            <li className="items" onClick={handleAboutClick}>
+            {/* <li className="items" onClick={handleAboutClick}>
               About me
-            </li>
+            </li> */}
             <li className="items" onClick={handleContactClick}>
               Contact
             </li>
