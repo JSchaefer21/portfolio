@@ -31,11 +31,11 @@ function Home(props: any) {
     window.scrollTo({ top: document.body.clientHeight, behavior: "smooth" })
     setView("projects")
   }
-  const handleAboutClick = () => {
-    setMenu(false)
-    window.scrollTo({ top: document.body.clientHeight, behavior: "smooth" })
-    setView("about")
-  }
+  // const handleAboutClick = () => {
+  //   setMenu(false)
+  //   window.scrollTo({ top: document.body.clientHeight, behavior: "smooth" })
+  //   setView("about")
+  // }
   const handleContactClick = () => {
     setMenu(false)
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })
